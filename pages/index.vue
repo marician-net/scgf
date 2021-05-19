@@ -42,7 +42,7 @@
         <img class="crystal-3" src="/il/_crystal-3.png" alt="Crystal" />
       </div>
 
-      <div class="w-full lg:ml-24 mx-auto mt-64 glass-card">
+      <div class="w-full lg:ml-40 mx-auto mt-64 glass-card">
         <div class="flex w-full flex-wrap">
           <h1 class="text-3xl lg:text-4xl text-black p-10">Secret Boxes</h1>
           <div class="w-full lg:w-2/3 p-10 pt-0 lg:pt-10">
@@ -68,9 +68,26 @@
               </svg>
             </button>
           </div>
+          <div class="w-full">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
         </div>
       </div>
-      <div class="w-full lg:w-4/5 mx-auto mt-40">
+      <div class="w-full lg:w-4/5 mx-auto glass-card">
         <div class="flex w-full flex-wrap">
           <h1 class="text-3xl lg:text-4xl text-black p-10">Mission</h1>
           <div class="w-full lg:w-2/3 p-10 pt-0 lg:pt-10">
@@ -102,7 +119,20 @@
       </div>
 
 
-       <div class="w-full lg:w-4/5 mx-auto mt-40 lg:px-20">
+        <div class="w-full lg:w-4/5 mx-auto mt-20 lg:px-10">
+        <div class="flex w-full flex-wrap">
+          <h1 class="w-full text-center text-3xl lg:text-4xl text-black p-10">Contributor</h1>
+          <div class="w-full p-10 pt-0 lg:pt-10 flex flex-wrap">
+              <div class="w-1/2 lg:w-1/4 my-2 p-2 flex flex-wrap text-center" v-for="i in contributors" :key="i.id">
+                <img class="m-auto rounded-lg" :src="`/user/${i.img}`" :alt="`User ${i.id}`">
+                <span class="w-full">{{i.name}}</span>
+                <small class="w-full">{{i.title}}</small>
+              </div>
+          </div>
+        </div>
+        </div>
+
+       <div class="w-full lg:w-4/5 mx-auto mt-20 lg:px-10">
         <div class="flex w-full flex-wrap">
           <h1 class="w-full text-center text-3xl lg:text-4xl text-black p-10">Work with Us</h1>
           <div class="w-full lg:w-3/5 p-10 pt-0 lg:pt-10">
@@ -140,7 +170,118 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data(){
+    return {
+      contributors: [
+        {
+          id: 1,
+          img: "1.png",
+          name: "Laura Weindorf",
+          title: "Founder",
+          address: "Michigan, USA",
+          sosmed: {
+            twitter: "https://twitter.com/@",
+            linkedin: "https://linkedin.com/@",
+            github: "https://github.com/@",
+            telegram: "https://t.com/@",
+          }
+        },
+        {
+          id: 2,
+          img: "2.png",
+          name: "Laura Weindorf",
+          title: "Founder",
+          address: "Michigan, USA",
+          sosmed: {
+            twitter: "https://twitter.com/@",
+            linkedin: "https://linkedin.com/@",
+            github: "https://github.com/@",
+            telegram: "https://t.com/@",
+          }
+        },
+        {
+          id: 3,
+          img: "3.png",
+          name: "Laura Weindorf",
+          title: "Founder",
+          address: "Michigan, USA",
+          sosmed: {
+            twitter: "https://twitter.com/@",
+            linkedin: "https://linkedin.com/@",
+            github: "https://github.com/@",
+            telegram: "https://t.com/@",
+          }
+        },
+        {
+          id: 4,
+          img: "4.png",
+          name: "Laura Weindorf",
+          title: "Founder",
+          address: "Michigan, USA",
+          sosmed: {
+            twitter: "https://twitter.com/@",
+            linkedin: "https://linkedin.com/@",
+            github: "https://github.com/@",
+            telegram: "https://t.com/@",
+          }
+        },
+        {
+          id: 5,
+          img: "5.png",
+          name: "Laura Weindorf",
+          title: "Founder",
+          address: "Michigan, USA",
+          sosmed: {
+            twitter: "https://twitter.com/@",
+            linkedin: "https://linkedin.com/@",
+            github: "https://github.com/@",
+            telegram: "https://t.com/@",
+          }
+        },
+        {
+          id: 6,
+          img: "6.png",
+          name: "Laura Weindorf",
+          title: "Founder",
+          address: "Michigan, USA",
+          sosmed: {
+            twitter: "https://twitter.com/@",
+            linkedin: "https://linkedin.com/@",
+            github: "https://github.com/@",
+            telegram: "https://t.com/@",
+          }
+        },
+        {
+          id: 7,
+          img: "7.png",
+          name: "Laura Weindorf",
+          title: "Founder",
+          address: "Michigan, USA",
+          sosmed: {
+            twitter: "https://twitter.com/@",
+            linkedin: "https://linkedin.com/@",
+            github: "https://github.com/@",
+            telegram: "https://t.com/@",
+          }
+        },
+        {
+          id: 8,
+          img: "8.png",
+          name: "Laura Weindorf",
+          title: "Founder",
+          address: "Michigan, USA",
+          sosmed: {
+            twitter: "https://twitter.com/@",
+            linkedin: "https://linkedin.com/@",
+            github: "https://github.com/@",
+            telegram: "https://t.com/@",
+          }
+        },
+      ]
+    }
+  }
+};
 </script>
 <style>
 main {
