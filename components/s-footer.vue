@@ -1,11 +1,11 @@
 <template>
     <footer class="footer w-full rounded-xl h-80 flex flex-wrap mt-20 p-10 lg:px-40 text-white">
-        <div class="w-full lg:w-3/5 flex items-center">
+        <div class="w-full lg:w-4/6 flex items-center">
             <img src="/logo.png" alt="Logo SCGF">
-            <strong class="text-lg">SecretChainGirl <br>
+            <strong class="text-lg px-4">SecretChainGirl <br>
             Foundation </strong>
         </div>
-        <div class="w-full lg:w-2/5 flex items-center ">
+        <div class="w-full lg:w-2/6 flex items-center p-4 ">
             <div class="w-1/2">
                 <strong>Community</strong>
                 <ul>

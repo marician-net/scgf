@@ -1,16 +1,17 @@
 <template>
-  <div
-    class="flex justify-center w-full flex-wrap w-screen relative pt-64 "
-  >
+  <div class="flex justify-center w-full flex-wrap pt-64">
     <img class="bg-1" src="/bg1.jpg" alt="Bg 1" />
-    <main class="z-10">
-      <div class="mx-auto text-center relative">
-        <h1 class="hero-title m-auto text-center px-20 text-5xl lg:text-7xl">
+
+    <main class="w-full z-10 relative mt-20">
+      <div class="mx-auto text-center">
+        <h1
+          class="hero-title m-auto text-center px-5 lg:px-20 text-5xl lg:text-7xl"
+        >
           SecretChainGirl <br />
           Foundation
         </h1>
         <br />
-        <p class="mx-auto text-center desc px-20">
+        <p class="mx-auto text-center desc px-5 lg:px-20">
           We’re passionate about helping developers build privacy-centric
         </p>
         <br />
@@ -42,9 +43,22 @@
         <img class="crystal-3" src="/il/_crystal-3.png" alt="Crystal" />
       </div>
 
-      <div class="w-5/5 lg:ml-40 lg:pr-40  mx-auto mt-80 glass-card">
+      <div class="w-full lg:w-4/5 mx-auto mt-64 lg:mt-80 glass-card py-10">
         <div class="flex w-full flex-wrap">
-          <h1 class="text-3xl lg:text-4xl text-black p-10">Secret Boxes</h1>
+          <h1 class="text-3xl lg:text-4xl text-black p-10">
+            <div class="-mt-5 mb-5">
+              <svg
+                width="32"
+                height="3"
+                viewBox="0 0 32 3"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="32" height="3" fill="#803DFF" />
+              </svg>
+            </div>
+            Secret Boxes
+          </h1>
           <div class="w-full lg:w-2/3 p-10 pt-0 lg:pt-10">
             <p>
               Secret Boxes are quickstarts to help you build decentralized,
@@ -68,8 +82,8 @@
               </svg>
             </button>
           </div>
-          <div class="w-full flex flex-wrap mt-10">
-            <div class="w-full lg:w-1/3 p-4 flex flex-wrap justify-center">
+          <div class="w-full flex flex-wrap mt-10 justify-center">
+            <div class="w-1/2 lg:w-1/3 p-4 flex flex-wrap justify-center">
               <lottie-player
                 src="https://assets5.lottiefiles.com/private_files/lf30_sqamzndl.json"
                 background="transparent"
@@ -80,7 +94,7 @@
               ></lottie-player>
               <strong class="w-full text-center">Secret Counter</strong>
             </div>
-            <div class="w-full lg:w-1/3 p-4 flex flex-wrap justify-center">
+            <div class="w-1/2 lg:w-1/3 p-4 flex flex-wrap justify-center">
               <lottie-player
                 src="https://assets2.lottiefiles.com/private_files/lf30_0vbtxqrd.json"
                 background="transparent"
@@ -88,12 +102,10 @@
                 loop
                 autoplay
                 class="w-5/6"
-
               ></lottie-player>
               <strong class="w-full text-center">Figmen Lern</strong>
-
             </div>
-            <div class="w-full lg:w-1/3 p-4 flex flex-wrap justify-center">
+            <div class="w-1/2 lg:w-1/3 p-4 flex flex-wrap justify-center">
               <lottie-player
                 src="https://assets10.lottiefiles.com/private_files/lf30_woabmjiz.json"
                 background="transparent"
@@ -103,14 +115,27 @@
                 class="w-5/6"
               ></lottie-player>
               <strong class="w-full text-center">Richie Rich</strong>
-
             </div>
           </div>
         </div>
       </div>
-      <div class="w-full lg:w-4/5 mx-auto glass-card mt-40">
+      <div class="w-full lg:w-4/5 mx-auto mt-10 lg:mt-40">
         <div class="flex w-full flex-wrap">
-          <h1 class="text-3xl lg:text-4xl text-black p-10">Mission</h1>
+          <h1 class="text-3xl lg:text-4xl text-black p-10">
+            <div class="-mt-5 mb-5 flex items-center">
+              <svg
+                width="32"
+                height="3"
+                viewBox="0 0 32 3"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="32" height="3" fill="#803DFF" />
+              </svg>
+              <span class="text-sm pl-2 text-gradient">About Us</span>
+            </div>
+            Mission
+          </h1>
           <div class="w-full lg:w-2/3 p-10 pt-0 lg:pt-10">
             <p>
               Developer adoption of the Secret Network by creating Secret Boxes
@@ -135,13 +160,28 @@
               </svg>
             </button>
           </div>
-          <img class="mt-10" src="/il/rocket-mission.png" alt="Rocket Mission" />
+          <img
+            class="mt-10 lg:mt-20 w-full lg:w-2/3"
+            src="/il/rocket-mission.png"
+            alt="Rocket Mission"
+          />
         </div>
       </div>
 
-      <div class="w-full lg:w-4/5 mx-auto mt-20 lg:px-10">
+      <div class="w-full lg:w-4/5 mx-auto mt-10 lg:mt-40 lg:px-10">
         <div class="flex w-full flex-wrap">
           <h1 class="w-full text-center text-3xl lg:text-4xl text-black p-10">
+            <div class="-mt-5 mb-5 w-full flex justify-center">
+              <svg
+                width="32"
+                height="3"
+                viewBox="0 0 32 3"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="32" height="3" fill="#803DFF" />
+              </svg>
+            </div>
             Contributor
           </h1>
           <div class="w-full p-10 pt-0 lg:pt-10 flex flex-wrap">
@@ -162,12 +202,23 @@
         </div>
       </div>
 
-      <div class="w-full lg:w-4/5 mx-auto mt-20 lg:px-10">
-        <div class="flex w-full flex-wrap">
-          <h1 class="w-full text-center text-3xl lg:text-4xl text-black p-10">
+      <div class="w-full lg:w-4/5 mx-auto mt-10 lg:mt-40 lg:px-10">
+        <div class="flex w-full flex-wrap items-start">
+          <h1 class="w-full text-3xl lg:text-4xl text-black p-10">
+            <div class="-mt-5 mb-5">
+              <svg
+                width="32"
+                height="3"
+                viewBox="0 0 32 3"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="32" height="3" fill="#803DFF" />
+              </svg>
+            </div>
             Work with Us
           </h1>
-          <div class="w-full lg:w-3/5 p-10 pt-0 lg:pt-10">
+          <div class="w-full lg:w-3/5 p-10 pt-0">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
               pulvinar suspendisse nunc a. Dictumst blandit amet nunc feugiat
@@ -202,12 +253,11 @@
           />
         </div>
       </div>
-
-      <div class="bg-gradient-1"></div>
-      <div class="bg-gradient-2"></div>
-      <div class="bg-gradient-3"></div>
-      <div class="bg-gradient-4"></div>
     </main>
+    <div class="bg-gradient-1"></div>
+    <div class="bg-gradient-2"></div>
+    <div class="bg-gradient-3"></div>
+    <div class="bg-gradient-4"></div>
   </div>
 </template>
 
@@ -226,8 +276,8 @@ export default {
             twitter: "https://twitter.com/@",
             linkedin: "https://linkedin.com/@",
             github: "https://github.com/@",
-            telegram: "https://t.com/@"
-          }
+            telegram: "https://t.com/@",
+          },
         },
         {
           id: 2,
@@ -239,8 +289,8 @@ export default {
             twitter: "https://twitter.com/@",
             linkedin: "https://linkedin.com/@",
             github: "https://github.com/@",
-            telegram: "https://t.com/@"
-          }
+            telegram: "https://t.com/@",
+          },
         },
         {
           id: 3,
@@ -252,8 +302,8 @@ export default {
             twitter: "https://twitter.com/@",
             linkedin: "https://linkedin.com/@",
             github: "https://github.com/@",
-            telegram: "https://t.com/@"
-          }
+            telegram: "https://t.com/@",
+          },
         },
         {
           id: 4,
@@ -265,8 +315,8 @@ export default {
             twitter: "https://twitter.com/@",
             linkedin: "https://linkedin.com/@",
             github: "https://github.com/@",
-            telegram: "https://t.com/@"
-          }
+            telegram: "https://t.com/@",
+          },
         },
         {
           id: 5,
@@ -278,8 +328,8 @@ export default {
             twitter: "https://twitter.com/@",
             linkedin: "https://linkedin.com/@",
             github: "https://github.com/@",
-            telegram: "https://t.com/@"
-          }
+            telegram: "https://t.com/@",
+          },
         },
         {
           id: 6,
@@ -291,8 +341,8 @@ export default {
             twitter: "https://twitter.com/@",
             linkedin: "https://linkedin.com/@",
             github: "https://github.com/@",
-            telegram: "https://t.com/@"
-          }
+            telegram: "https://t.com/@",
+          },
         },
         {
           id: 7,
@@ -304,8 +354,8 @@ export default {
             twitter: "https://twitter.com/@",
             linkedin: "https://linkedin.com/@",
             github: "https://github.com/@",
-            telegram: "https://t.com/@"
-          }
+            telegram: "https://t.com/@",
+          },
         },
         {
           id: 8,
@@ -317,12 +367,12 @@ export default {
             twitter: "https://twitter.com/@",
             linkedin: "https://linkedin.com/@",
             github: "https://github.com/@",
-            telegram: "https://t.com/@"
-          }
-        }
-      ]
+            telegram: "https://t.com/@",
+          },
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 <style>
@@ -341,7 +391,7 @@ export default {
     ),
     #ff9191;
   filter: blur(400px);
-  opacity: .6;
+  opacity: 0.6;
 }
 .bg-gradient-2 {
   position: absolute;
@@ -358,7 +408,7 @@ export default {
     ),
     #ff9191;
   filter: blur(400px);
-  opacity: .6;
+  opacity: 0.6;
 }
 .bg-gradient-3 {
   position: absolute;
@@ -366,7 +416,6 @@ export default {
   height: 463px;
   left: 1283px;
   top: 2968px;
-
   background: linear-gradient(0deg, #ff9191, #ff9191), #ff9191;
   opacity: 0.6;
   filter: blur(400px);
@@ -376,8 +425,7 @@ export default {
   width: 593px;
   height: 593px;
   left: -416px;
-  top: 3548px;
-
+  top: 100%;
   background: linear-gradient(
       180deg,
       #e9eef3 0%,
@@ -387,16 +435,17 @@ export default {
     ),
     #ff9191;
   filter: blur(400px);
-  opacity: .6;
+  opacity: 0.6;
 }
 .bg-1 {
   width: 100%;
-  min-height: 85vh;
+  /* min-height: 100vh; */
   position: absolute;
   top: 0;
   left: 0;
 }
-.hero-title {
+.hero-title,
+.text-gradient {
   background: linear-gradient(91.22deg, #a568ef 16%, #ff9191 103.7%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -455,6 +504,28 @@ export default {
 }
 
 @media only screen and (max-width: 800px) {
+  .bg-gradient-1 {
+    width: 200px;
+    height: 200px;
+    left: 500px;
+  }
+  .bg-gradient-2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: -100px;
+  }
+  .bg-gradient-3 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 500px;
+  }
+  .bg-gradient-4 {
+    width: 200px;
+    height: 200px;
+    left: -100px;
+  }
   .card-line-1 {
     top: 170px;
     width: 30%;
@@ -483,6 +554,7 @@ export default {
     top: 250px;
   }
 }
+
 .glass-card {
   background: linear-gradient(
     104.93deg,

@@ -1,5 +1,5 @@
 <template>
-  <div class="layout text-black ">
+  <div class="w-full h-screen overflow-y-scroll text-black relative overflow-x-hidden ">
     <s-navbar />
     <Nuxt />
     <s-footer />
@@ -7,10 +7,6 @@
 </template>
 
 <style>
-.layout{
-  width: 100%;
-  overflow: hidden;
-}
 *,
 *::before,
 *::after {
