@@ -7,7 +7,7 @@
       extend: {
           colors: {
               primary: '#6900F4',
-              black: '4E4B66'
+              black: '#4E4B66'
           }
         }
     }

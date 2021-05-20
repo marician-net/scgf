@@ -1,11 +1,16 @@
 <template>
-  <div class="text-black">
+  <div class="layout text-black ">
     <s-navbar />
     <Nuxt />
+    <s-footer />
   </div>
 </template>
 
 <style>
+.layout{
+  width: 100%;
+  overflow: hidden;
+}
 *,
 *::before,
 *::after {

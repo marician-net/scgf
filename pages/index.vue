@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex justify-center w-full flex-wrap w-screen relative pt-64 overflow-x-hidden"
+    class="flex justify-center w-full flex-wrap w-screen relative pt-64 "
   >
     <img class="bg-1" src="/bg1.jpg" alt="Bg 1" />
     <main class="z-10">
@@ -42,7 +42,7 @@
         <img class="crystal-3" src="/il/_crystal-3.png" alt="Crystal" />
       </div>
 
-      <div class="w-full lg:ml-40 mx-auto mt-64 glass-card">
+      <div class="w-5/5 lg:ml-40 lg:pr-40  mx-auto mt-80 glass-card">
         <div class="flex w-full flex-wrap">
           <h1 class="text-3xl lg:text-4xl text-black p-10">Secret Boxes</h1>
           <div class="w-full lg:w-2/3 p-10 pt-0 lg:pt-10">
@@ -68,33 +68,54 @@
               </svg>
             </button>
           </div>
-          <div class="w-full">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+          <div class="w-full flex flex-wrap mt-10">
+            <div class="w-full lg:w-1/3 p-4 flex flex-wrap justify-center">
+              <lottie-player
+                src="https://assets5.lottiefiles.com/private_files/lf30_sqamzndl.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+                class="w-5/6"
+              ></lottie-player>
+              <strong class="w-full text-center">Secret Counter</strong>
+            </div>
+            <div class="w-full lg:w-1/3 p-4 flex flex-wrap justify-center">
+              <lottie-player
+                src="https://assets2.lottiefiles.com/private_files/lf30_0vbtxqrd.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+                class="w-5/6"
+
+              ></lottie-player>
+              <strong class="w-full text-center">Figmen Lern</strong>
+
+            </div>
+            <div class="w-full lg:w-1/3 p-4 flex flex-wrap justify-center">
+              <lottie-player
+                src="https://assets10.lottiefiles.com/private_files/lf30_woabmjiz.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+                class="w-5/6"
+              ></lottie-player>
+              <strong class="w-full text-center">Richie Rich</strong>
+
+            </div>
           </div>
         </div>
       </div>
-      <div class="w-full lg:w-4/5 mx-auto glass-card">
+      <div class="w-full lg:w-4/5 mx-auto glass-card mt-40">
         <div class="flex w-full flex-wrap">
           <h1 class="text-3xl lg:text-4xl text-black p-10">Mission</h1>
           <div class="w-full lg:w-2/3 p-10 pt-0 lg:pt-10">
             <p>
               Developer adoption of the Secret Network by creating Secret Boxes
-              for key use cases. Passionate about helping developers create beautifully designed Secret Apps.
-
+              for key use cases. Passionate about helping developers create
+              beautifully designed Secret Apps.
             </p>
             <button class="text-primary flex mt-3">
               Explore more
@@ -114,30 +135,47 @@
               </svg>
             </button>
           </div>
-          <img src="/il/rocket-mission.png" alt="Rocket Mission">
+          <img class="mt-10" src="/il/rocket-mission.png" alt="Rocket Mission" />
         </div>
       </div>
 
-
-        <div class="w-full lg:w-4/5 mx-auto mt-20 lg:px-10">
+      <div class="w-full lg:w-4/5 mx-auto mt-20 lg:px-10">
         <div class="flex w-full flex-wrap">
-          <h1 class="w-full text-center text-3xl lg:text-4xl text-black p-10">Contributor</h1>
+          <h1 class="w-full text-center text-3xl lg:text-4xl text-black p-10">
+            Contributor
+          </h1>
           <div class="w-full p-10 pt-0 lg:pt-10 flex flex-wrap">
-              <div class="w-1/2 lg:w-1/4 my-2 p-2 flex flex-wrap text-center" v-for="i in contributors" :key="i.id">
-                <img class="m-auto rounded-lg" :src="`/user/${i.img}`" :alt="`User ${i.id}`">
-                <span class="w-full">{{i.name}}</span>
-                <small class="w-full">{{i.title}}</small>
-              </div>
+            <div
+              class="w-1/2 lg:w-1/4 my-2 p-2 flex flex-wrap text-center"
+              v-for="i in contributors"
+              :key="i.id"
+            >
+              <img
+                class="m-auto rounded-lg"
+                :src="`/user/${i.img}`"
+                :alt="`User ${i.id}`"
+              />
+              <span class="w-full">{{ i.name }}</span>
+              <small class="w-full">{{ i.title }}</small>
+            </div>
           </div>
         </div>
-        </div>
+      </div>
 
-       <div class="w-full lg:w-4/5 mx-auto mt-20 lg:px-10">
+      <div class="w-full lg:w-4/5 mx-auto mt-20 lg:px-10">
         <div class="flex w-full flex-wrap">
-          <h1 class="w-full text-center text-3xl lg:text-4xl text-black p-10">Work with Us</h1>
+          <h1 class="w-full text-center text-3xl lg:text-4xl text-black p-10">
+            Work with Us
+          </h1>
           <div class="w-full lg:w-3/5 p-10 pt-0 lg:pt-10">
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam pulvinar suspendisse nunc a. Dictumst blandit amet nunc feugiat gravida. Sagittis, in iaculis vestibulum, rhoncus scelerisque scelerisque dignissim odio. Amet nisl, tristique sed pharetra molestie donec elit rutrum quisque. Eget augue non mauris est. Eu sed et est lorem enim morbi. Viverra aliquet cursus habitant dolor purus. Dolor augue eu sit in. 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
+              pulvinar suspendisse nunc a. Dictumst blandit amet nunc feugiat
+              gravida. Sagittis, in iaculis vestibulum, rhoncus scelerisque
+              scelerisque dignissim odio. Amet nisl, tristique sed pharetra
+              molestie donec elit rutrum quisque. Eget augue non mauris est. Eu
+              sed et est lorem enim morbi. Viverra aliquet cursus habitant dolor
+              purus. Dolor augue eu sit in.
             </p>
             <button class="text-primary flex mt-3">
               Explore more
@@ -157,7 +195,11 @@
               </svg>
             </button>
           </div>
-          <img class="w-full lg:w-2/5" src="/il/work-with-us.png" alt="Rocket Mission">
+          <img
+            class="w-full lg:w-2/5"
+            src="/il/work-with-us.png"
+            alt="Rocket Mission"
+          />
         </div>
       </div>
 
@@ -171,7 +213,7 @@
 
 <script>
 export default {
-  data(){
+  data() {
     return {
       contributors: [
         {
@@ -184,7 +226,7 @@ export default {
             twitter: "https://twitter.com/@",
             linkedin: "https://linkedin.com/@",
             github: "https://github.com/@",
-            telegram: "https://t.com/@",
+            telegram: "https://t.com/@"
           }
         },
         {
@@ -197,7 +239,7 @@ export default {
             twitter: "https://twitter.com/@",
             linkedin: "https://linkedin.com/@",
             github: "https://github.com/@",
-            telegram: "https://t.com/@",
+            telegram: "https://t.com/@"
           }
         },
         {
@@ -210,7 +252,7 @@ export default {
             twitter: "https://twitter.com/@",
             linkedin: "https://linkedin.com/@",
             github: "https://github.com/@",
-            telegram: "https://t.com/@",
+            telegram: "https://t.com/@"
           }
         },
         {
@@ -223,7 +265,7 @@ export default {
             twitter: "https://twitter.com/@",
             linkedin: "https://linkedin.com/@",
             github: "https://github.com/@",
-            telegram: "https://t.com/@",
+            telegram: "https://t.com/@"
           }
         },
         {
@@ -236,7 +278,7 @@ export default {
             twitter: "https://twitter.com/@",
             linkedin: "https://linkedin.com/@",
             github: "https://github.com/@",
-            telegram: "https://t.com/@",
+            telegram: "https://t.com/@"
           }
         },
         {
@@ -249,7 +291,7 @@ export default {
             twitter: "https://twitter.com/@",
             linkedin: "https://linkedin.com/@",
             github: "https://github.com/@",
-            telegram: "https://t.com/@",
+            telegram: "https://t.com/@"
           }
         },
         {
@@ -262,7 +304,7 @@ export default {
             twitter: "https://twitter.com/@",
             linkedin: "https://linkedin.com/@",
             github: "https://github.com/@",
-            telegram: "https://t.com/@",
+            telegram: "https://t.com/@"
           }
         },
         {
@@ -275,18 +317,15 @@ export default {
             twitter: "https://twitter.com/@",
             linkedin: "https://linkedin.com/@",
             github: "https://github.com/@",
-            telegram: "https://t.com/@",
+            telegram: "https://t.com/@"
           }
-        },
+        }
       ]
-    }
+    };
   }
 };
 </script>
 <style>
-main {
-  min-height: 4400px;
-}
 .bg-gradient-1 {
   position: absolute;
   width: 593px;
@@ -302,6 +341,7 @@ main {
     ),
     #ff9191;
   filter: blur(400px);
+  opacity: .6;
 }
 .bg-gradient-2 {
   position: absolute;
@@ -318,6 +358,7 @@ main {
     ),
     #ff9191;
   filter: blur(400px);
+  opacity: .6;
 }
 .bg-gradient-3 {
   position: absolute;
@@ -346,6 +387,7 @@ main {
     ),
     #ff9191;
   filter: blur(400px);
+  opacity: .6;
 }
 .bg-1 {
   width: 100%;
