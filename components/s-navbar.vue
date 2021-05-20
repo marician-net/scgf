@@ -5,22 +5,21 @@
     <nuxt-link to="/">
       <img class="w-16 lg:w-20" src="/logo.png" alt="Logo" />
     </nuxt-link>
-    <nav  :class="(!menuActive) ? 'ml-auto hidden lg:flex' : 'flex z-50 fixed  w-52 right-0 top-0 flex-wrap nav-mobile'"
+    <nav  :class="(!menuActive) ? 'ml-auto hidden lg:flex' : 'flex z-50 fixed flex-wrap items-start nav-mobile'"
     >
-      <nuxt-link @click="menuActive = false" class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" to="/"
-        ><h6>Secret Box</h6></nuxt-link
+      <a href="#" @click="to('/secret-boxes')"  class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto"
+        ><h6>Secret Boxes</h6></a>
+      <a href="#"  @click="to('/about')" class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" 
+        ><h6>About</h6></a
       >
-      <nuxt-link @click="menuActive = false" class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" to="/"
-        ><h6>About</h6></nuxt-link
+      <a href="#" @click="to('/contributors')" class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" 
+        ><h6>Contributors</h6></a
       >
-      <nuxt-link @click="menuActive = false" class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" to="/"
-        ><h6>Contributors</h6></nuxt-link
-      >
-      <nuxt-link @click="menuActive = false" class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" to="/"
-        ><h6>Work with Us</h6></nuxt-link
+      <a href="#" @click="to('/work-with-us')" class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" 
+        ><h6>Work with Us</h6></a
       >
     </nav>
-    <img v-if="menuActive" @click="menuActive = false" class="z-20 h-screen fixed top-0 right-0" src="/menu-bg.jpg" alt="Menu Bg">
+    <img v-if="menuActive" @click="menuActive = false" class="z-20 fixed top-0 right-0" width="360px"  src="/menu-bg.jpg" alt="Menu Bg">
     <button class="ml-auto lg:hidden" @click="menuActive = !menuActive">
       <svg
         v-if="!menuActive"
@@ -86,18 +85,21 @@ export default {
       menuActive: false,
     };
   },
+  methods:{
+    to(link){
+      this.menuActive = false
+      this.$router.push(link)
+    }
+  }
 };
 </script>
 <style>
 .nav-mobile{
-    margin-top:200px;
-    margin-right:150px
-}
-@media only screen and (max-width:430px){
-  .nav-mobile{
-        margin-top:200px;
-        margin-right:100px
-  }
+    width: 360px;
+    margin-top:150px;
+    right: 0;
+    top: 0;
+    padding: 10px;
 }
 .navbar {
   font-style: normal;

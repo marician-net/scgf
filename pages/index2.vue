@@ -7,15 +7,16 @@
         <h1
           class="hero-title m-auto text-center px-5 lg:px-20 text-5xl lg:text-7xl"
         >
-          SecretChainGirl <br />
-          Foundation
+          <span class="text-gradient">SecretChainGirl </span>
+          <br />
+          <span class="text-gradient">Foundation</span>
         </h1>
         <br />
         <p class="mx-auto text-center desc px-5 lg:px-20">
           We’re passionate about helping developers build privacy-centric
         </p>
         <br />
-        <button class="text-primary flex justify-center mx-auto mt-16 lg:mt-0">
+        <nuxt-link to="/explore-more" class="text-primary flex justify-center mx-auto mt-16 lg:mt-0">
           Explore more
           <svg
             width="24"
@@ -31,7 +32,7 @@
               fill="#6900F4"
             />
           </svg>
-        </button>
+        </nuxt-link>
 
         <s-card-line1 class="card-line-1" />
         <s-card-line2 class="card-line-2" />
