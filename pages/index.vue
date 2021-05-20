@@ -1,8 +1,8 @@
 <template>
-  <div class="flex justify-center w-full flex-wrap pt-64">
+  <div class="flex justify-center w-full flex-wrap pt-40 lg:pt-64">
     <img class="bg-1" src="/bg1.jpg" alt="Bg 1" />
 
-    <main class="w-full z-10 relative mt-20">
+    <main class="w-full z-10 relative lg:mt-20">
       <div class="mx-auto text-center">
         <h1
           class="hero-title m-auto text-center px-5 lg:px-20 text-5xl lg:text-7xl"
@@ -186,15 +186,23 @@
           </h1>
           <div class="w-full p-10 pt-0 lg:pt-10 flex flex-wrap">
             <div
-              class="w-1/2 lg:w-1/4 my-2 p-2 flex flex-wrap text-center"
+              class="w-1/2 lg:w-1/4 my-2 p-2 flex flex-wrap text-center c-to-hover relative"
               v-for="i in contributors"
               :key="i.id"
             >
-              <img
-                class="m-auto rounded-lg"
-                :src="`/user/${i.img}`"
-                :alt="`User ${i.id}`"
-              />
+              <div class="w-full rounded-lg relative">
+                <img
+                  class="absolute w-full rounded-lg opacity-90 c-hover"
+                  src="/filter.jpg"
+                  alt="filter"
+                />
+                <img
+                  class="w-full rounded-lg"
+                  :src="`/user/${i.img}`"
+                  :alt="`User ${i.id}`"
+                />
+              </div>
+              <s-sosmed-contributor class="c-hover-flex -mt-10" :sosmed="i.sosmed" :address="i.address" />
               <span class="w-full">{{ i.name }}</span>
               <small class="w-full">{{ i.title }}</small>
             </div>
@@ -202,7 +210,7 @@
         </div>
       </div>
 
-      <div class="w-full lg:w-4/5 mx-auto mt-10 lg:mt-40 lg:px-10">
+      <div class="w-full lg:w-4/5 mx-auto p-2 mt-10 lg:mt-40 lg:px-10">
         <div class="flex w-full flex-wrap items-start">
           <h1 class="w-full text-3xl lg:text-4xl text-black p-10">
             <div class="-mt-5 mb-5">
@@ -262,7 +270,7 @@
 </template>
 
 <script>
-export default {
+export default{
   data() {
     return {
       contributors: [
@@ -439,7 +447,7 @@ export default {
 }
 .bg-1 {
   width: 100%;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -564,5 +572,19 @@ export default {
   backdrop-filter: blur(28px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 75px 0px 75px 75px;
+}
+
+.c-hover {
+  display: none;
+}
+.c-hover-flex {
+  display: none;
+}
+.c-to-hover:hover .c-hover {
+  display: block;
+}
+
+.c-to-hover:hover .c-hover-flex {
+  display: flex;
 }
 </style>

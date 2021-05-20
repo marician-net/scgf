@@ -1,29 +1,31 @@
 <template>
-    <footer class="footer w-full rounded-xl h-80 flex flex-wrap mt-20 p-10 lg:px-40 text-white">
-        <div class="w-full lg:w-4/6 flex items-center">
+    <footer class="footer w-full rounded-xl min-h-80 lg:h-80 flex flex-wrap mt-20 p-10 lg:px-40 text-white lg:block">
+        <div class="w-full lg:w-2/6 flex flex-wrap items-center p-4 lg:float-right">
+            <div class="w-full lg:w-1/2">
+                <strong class="py-2 text-xl">Community</strong>
+                <ul>
+                    <li class="py-2">Twitter</li>
+                    <li class="py-2">Telegram</li>
+                    <li class="py-2">Discord</li>
+                    <li class="py-2">Medium</li>
+                </ul>
+            </div>
+             <div class="w-full lg:w-1/2">
+                <strong class="py-2 text-xl">Leanguage</strong>
+                <ul>
+                    <li class="py-2">Enghlish</li>
+                    <li class="py-2">Chines</li>
+                    <li class="py-2">Spanish</li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full lg:w-4/6 flex items-center justify-center lg:justify-start lg:float-left">
             <img src="/logo.png" alt="Logo SCGF">
-            <strong class="text-lg px-4">SecretChainGirl <br>
+            <strong class="lg:text-lg px-4">SecretChainGirl <br>
             Foundation </strong>
         </div>
-        <div class="w-full lg:w-2/6 flex items-center p-4 ">
-            <div class="w-1/2">
-                <strong>Community</strong>
-                <ul>
-                    <li>Twitter</li>
-                    <li>Telegram</li>
-                    <li>Discord</li>
-                    <li>Medium</li>
-                </ul>
-            </div>
-             <div class="w-1/2">
-                <strong>Leanguage</strong>
-                <ul>
-                    <li>Enghlish</li>
-                    <li>Chines</li>
-                    <li>Spanish</li>
-                </ul>
-            </div>
-        </div>
+
+        <p class="w-full  text-center pt-3 lg:text-right lg:float-right">© 2021 SecretChainGirl Foundation</p>
 
     </footer>
 </template>
