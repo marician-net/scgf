@@ -5,7 +5,6 @@
     <s-footer />
   </div>
 </template>
-
 <style>
 *,
 *::before,

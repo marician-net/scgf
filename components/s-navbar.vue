@@ -9,10 +9,10 @@
     >
       <a href="#" @click="to('/secret-boxes')"  class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto"
         ><h6>Secret Boxes</h6></a>
-      <a href="#"  @click="to('/about')" class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" 
+      <a href="#"  @click="scrollToMenu('about')" class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" 
         ><h6>About</h6></a
       >
-      <a href="#" @click="to('/contributors')" class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" 
+      <a href="#" @click="scrollToMenu('contributors')" class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" 
         ><h6>Contributors</h6></a
       >
       <a href="#" @click="to('/work-with-us')" class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" 
@@ -89,6 +89,14 @@ export default {
     to(link){
       this.menuActive = false
       this.$router.push(link)
+    },
+    scrollToMenu(link){
+      this.menuActive = false
+      if(this.$route.path == "/"){
+        this.$store.commit("scrollToMenu",link)
+      }else{
+        this.$router.push("/?"+link)
+      }
     }
   }
 };

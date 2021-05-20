@@ -120,7 +120,7 @@
           </div>
         </div>
       </div>
-      <div class="w-full lg:w-4/5 mx-auto mt-10 lg:mt-40">
+      <div class="w-full lg:w-4/5 mx-auto mt-10 lg:mt-40 about">
         <div class="flex w-full flex-wrap">
           <h1 class="text-3xl lg:text-4xl text-black p-10">
             <div class="-mt-5 mb-5 flex items-center">
@@ -169,7 +169,7 @@
         </div>
       </div>
 
-      <div class="w-full lg:w-4/5 mx-auto mt-10 lg:mt-40 lg:px-10">
+      <div class="w-full lg:w-4/5 mx-auto mt-10 lg:mt-40 lg:px-10 contributors">
         <div class="flex w-full flex-wrap">
           <h1 class="w-full text-center text-3xl lg:text-4xl text-black p-10">
             <div class="-mt-5 mb-5 w-full flex justify-center">
@@ -271,7 +271,27 @@
 </template>
 
 <script>
-export default{
+export default {
+  computed: {
+    scrollToMenu () {
+      return this.$store.state.scrollToMenu
+    }
+  },
+  watch: {
+    scrollToMenu (element) {
+      const el = this.$el.getElementsByClassName(element)[0];
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  },
+  mounted(){
+    var link = window.location.href
+    if(link.split("?")[1] !== undefined){
+        // console.log(link.split("?")[1])
+      this.$store.commit("scrollToMenu",(link.split("?")[1]).split("#")[0])
+    }
+  },
   data() {
     return {
       contributors: [
