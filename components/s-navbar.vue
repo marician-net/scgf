@@ -7,16 +7,16 @@
     </nuxt-link>
     <nav  :class="(!menuActive) ? 'ml-auto hidden lg:flex' : 'flex z-50 fixed flex-wrap items-start nav-mobile'"
     >
-      <a href="#" @click="to('/secret-boxes')"  class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto"
-        ><h6>Secret Boxes</h6></a>
-      <a href="#"  @click="scrollToMenu('about')" class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" 
-        ><h6>About</h6></a
+      <button type="button" @click="scrollToMenu('secret-box')"  class=" focus:outline-none px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto"
+        ><h6>Secret Boxes</h6></button>
+      <button type="button"  @click="scrollToMenu('about')" class=" focus:outline-none px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" 
+        ><h6>About</h6></button
       >
-      <a href="#" @click="scrollToMenu('contributors')" class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" 
-        ><h6>Contributors</h6></a
+      <button type="button" @click="scrollToMenu('contributors')" class=" focus:outline-none px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" 
+        ><h6>Contributors</h6></button
       >
-      <a href="#" @click="to('/work-with-us')" class="px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" 
-        ><h6>Work with Us</h6></a
+      <button type="button" @click="scrollToMenu('work-with-us')" class=" focus:outline-none px-6 py-4 lg:py-2 hover-gradient w-full lg:w-auto" 
+        ><h6>Work with Us</h6></button
       >
     </nav>
     <img v-if="menuActive" @click="menuActive = false" class="z-20 fixed top-0 right-0" width="360px"  src="/menu-bg.jpg" alt="Menu Bg">

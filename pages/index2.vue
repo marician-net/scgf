@@ -65,7 +65,7 @@
               Secret Boxes are quickstarts to help you build decentralized,
               privacy preserving dApps on the Secret Network.
             </p>
-            <button class="text-primary flex mt-3">
+            <nuxt-link to="/secret-boxes" class="text-primary flex mt-3">
               Explore more
               <svg
                 width="24"
@@ -81,7 +81,7 @@
                   fill="#6900F4"
                 />
               </svg>
-            </button>
+            </nuxt-link>
           </div>
           <div class="w-full flex flex-wrap mt-10 justify-center">
             <div class="w-1/2 lg:w-1/3 p-4 flex flex-wrap justify-center">
@@ -143,7 +143,7 @@
               for key use cases. Passionate about helping developers create
               beautifully designed Secret Apps.
             </p>
-            <button class="text-primary flex mt-3">
+            <nuxt-link to="/about" class="text-primary flex mt-3">
               Explore more
               <svg
                 width="24"
@@ -159,7 +159,7 @@
                   fill="#6900F4"
                 />
               </svg>
-            </button>
+            </nuxt-link>
           </div>
 
           <div class="w-full lg:w-1/2">
@@ -175,7 +175,7 @@
         <s-contributors  />
       </div>
 
-      <div class="w-full lg:w-4/5 mx-auto p-2 mt-10 lg:mt-40 lg:px-10">
+      <div class="w-full lg:w-4/5 mx-auto p-2 mt-10 lg:mt-40 lg:px-10 work-with-us">
         <div class="flex w-full flex-wrap items-start">
           <h1 class="w-full text-3xl lg:text-4xl text-black p-10">
             <div class="-mt-5 mb-5">
@@ -201,7 +201,7 @@
               sed et est lorem enim morbi. Viverra aliquet cursus habitant dolor
               purus. Dolor augue eu sit in.
             </p>
-            <button class="text-primary flex mt-3">
+            <nuxt-link to="/work-with-us" class="text-primary flex mt-3">
               Explore more
               <svg
                 width="24"
@@ -217,7 +217,7 @@
                   fill="#6900F4"
                 />
               </svg>
-            </button>
+            </nuxt-link>
           </div>
           <div class="w-full lg:w-2/5">
               <lottie-player class="w-full" src="https://assets7.lottiefiles.com/private_files/lf30_bxgf8h5h.json" 
