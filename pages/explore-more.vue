@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center w-full flex-wrap pt-40 lg:pt-64">
-    <img class="bg-2" src="/bg2.jpg" alt="Bg 1" />
+    <img class="bg-2" src="/bg2.jpg" alt="Bg 1" style="z-index:-1" />
     <main class="w-full z-10 relative">
      <div class="w-full lg:w-4/5 mx-auto glass-card">
         <div class="flex w-full flex-wrap">
@@ -57,7 +57,11 @@
     </main>
   </div>
 </template>
-
+<script>
+export default {
+  scrollToTop: true
+}
+</script>
 <style>
 .bg-2 {
   width: 100%;
