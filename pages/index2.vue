@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center w-full flex-wrap pt-40 lg:pt-64">
-    <img class="bg-1" src="/bg1.jpg" alt="Bg 1" />
+    <img class="bg-1" src="/bg1.jpg" alt="Bg 1" style="z-index:-1" />
 
     <main class="w-full z-10 relative lg:mt-20">
       <div class="mx-auto text-center">
