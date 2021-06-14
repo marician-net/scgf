@@ -5,14 +5,14 @@
     <main class="w-full z-10 relative">
       <div class="mx-auto text-center">
         <h1
-          class="hero-title m-auto text-center px-5 lg:px-20 text-5xl lg:text-7xl "
+          class="hero-title m-auto text-center px-5 lg:px-20 text-5xl lg:text-7xl  tracking-wider"
         >
           <span class="text-gradient">SecretChainGirl </span>
             <br />
           <span class="text-gradient">Foundation </span>
         </h1>
         <br />
-        <p class="mx-auto text-center desc px-5 lg:px-20 text-2xl">
+        <p class="mx-auto text-center desc px-5 lg:px-20 text-xl lg:text-2xl">
           We’re passionate about helping developers build <br> privacy-centric DApps
         </p>
         <br />
