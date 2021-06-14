@@ -170,7 +170,6 @@ export default {
   },
 };
 </script>
-
 <style>
 .hover-bg-gradient:hover {
   background: linear-gradient(180deg, #a769ec 0%, #f28b9d 100%);

@@ -2,7 +2,7 @@
   <div class="flex justify-center w-full flex-wrap pt-40 lg:pt-48 relative">
     <img class="bg-2" src="/bg2.jpg" alt="Bg 1" style="z-index: -1" />
     <main class="w-full z-10 relative">
-      <div class="w-full lg:w-4/6 mx-auto glass-card p-10">
+      <div class="w-full lg:w-4/6 mx-auto glass-card lg:p-10">
         <div class="flex w-full flex-wrap">
           <h1 class="text-3xl lg:text-5xl text-black p-10">Secret Boxes</h1>
           <div class="w-full p-10 pt-0">
@@ -25,7 +25,7 @@
                   speed="1"
                   loop
                   autoplay
-                  class="w-2/3 lg:w-full lg:pr-20 mx-auto pl-24 lg:pl-0"
+                  class="w-2/3 lg:w-full lg:pr-20 mx-auto pl-10 lg:pl-0"
                 ></lottie-player>
               </div>
               <div class="w-full lg:w-3/4 mt-10">
@@ -112,7 +112,7 @@
                   speed="1"
                   loop
                   autoplay
-                  class="w-2/3 lg:w-full lg:pr-20 mx-auto pl-24 lg:pl-0"
+                  class="w-2/3 lg:w-full lg:pr-20 mx-auto pl-10 lg:pl-0"
                 ></lottie-player>
               </div>
               <div class="w-full lg:w-3/4 mt-10">
@@ -200,7 +200,7 @@
                   speed="1"
                   loop
                   autoplay
-                  class="w-2/3 lg:w-full lg:pr-20 mx-auto pl-24 lg:pl-0"
+                  class="w-2/3 lg:w-full lg:pr-20 mx-auto pl-10 lg:pl-0"
                 ></lottie-player>
               </div>
               <div class="w-full lg:w-3/4 mt-10">

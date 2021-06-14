@@ -17,13 +17,13 @@
           <span class="text-gradient">Work With Us </span>
         </h1>
         <br />
-        <p class="text-2xl mx-auto text-center desc px-5 lg:px-20">
+        <p class="text-xl lg:text-2xl mx-auto text-center desc px-5 lg:px-20">
           Help us on our quest to make Secret Network Ecosystem even better.
         </p>
       </div>
       <div class="w-full lg:w-11/12 mx-auto glass-card-white bg-white mt-10">
-        <div class="flex w-full flex-wrap p-10 lg:p-20">
-          <h1 class="w-full my-5 mb-10 text-3xl lg:text-4xl text-black">
+        <div class="flex w-full flex-wrap p-0 lg:p-20">
+          <h1 class="w-full px-5 mt-10 text-3xl lg:text-4xl text-black">
             Contact Form
           </h1>
           <div class="w-full lg:w-2/5 flex flex-wrap items-between p-4">
@@ -93,7 +93,7 @@
                   </linearGradient>
                 </defs>
               </svg>
-              <label class="w-full my-3" for="fullname">Full name</label>
+              <label class="w-full my-3 px-5" for="fullname">Full name</label>
               <input
                 v-model="fullname"
                 type="text"
@@ -150,7 +150,7 @@
                 </defs>
               </svg>
 
-              <label class="w-full my-3" for="email">Email</label>
+              <label class="w-full my-3 px-5" for="email">Email</label>
               <input
                 v-model="email"
                 type="email"
@@ -161,7 +161,7 @@
           </div>
 
           <div class="w-full lg:w-3/5 flex flex-wrap p-4">
-            <label class="w-full my-3" for="message">Message</label>
+            <label class="w-full my-3 px-5" for="message">Message</label>
             <textarea
               placeholder="You’re Awesome!"
               v-model="message"
@@ -185,9 +185,10 @@
                   hover:text-pink-600
                   opacity-50
                   hover:opacity-1
+                  hover:font-bold
                 "
                 :class="
-                  service == 'React Frontend' ? 'bg-pink-200 text-pink-600 opacity-1' : ''
+                  service == 'React Frontend' ? 'bg-pink-200 text-pink-600 opacity-1 font-bold' : ''
                 "
                 @click="service = 'React Frontend'"
               >
@@ -205,9 +206,11 @@
                   hover:text-pink-600
                   opacity-50
                   hover:opacity-1
+                  hover:font-bold
+
                 "
                 :class="
-                  service == 'UX Research' ? 'bg-pink-200 text-pink-600 opacity-1' : ''
+                  service == 'UX Research' ? 'bg-pink-200 text-pink-600 opacity-1 font-bold' : ''
                 "
                 @click="service = 'UX Research'"
               >
@@ -225,10 +228,11 @@
                   hover:text-pink-600
                   opacity-50
                   hover:opacity-1
+                  hover:font-bold
                 "
                 :class="
                   service == 'Content Creator'
-                    ? 'bg-pink-200 text-pink-600 opacity-1'
+                    ? 'bg-pink-200 text-pink-600 opacity-1 font-bold'
                     : ''
                 "
                 @click="service = 'Content Creator'"
@@ -247,10 +251,12 @@
                   hover:text-pink-600
                   opacity-50
                   hover:opacity-1
+                  hover:font-bold
+                  
                 "
                 :class="
                   service == 'Graphic Designer'
-                    ? 'bg-pink-200 text-pink-600 opacity-1'
+                    ? 'bg-pink-200 text-pink-600 opacity-1 font-bold'
                     : ''
                 "
                 @click="service = 'Graphic Designer'"
@@ -269,8 +275,10 @@
                   hover:text-pink-600
                   opacity-50
                   hover:opacity-1
+                  hover:font-bold
+
                 "
-                :class="service == 'Other' ? 'bg-pink-200 text-pink-600 opacity-1' : ''"
+                :class="service == 'Other' ? 'bg-pink-200 text-pink-600 opacity-1 font-bold' : ''"
                 @click="service = 'Other'"
               >
                 Other
@@ -278,7 +286,7 @@
             </ul>
           </div>
           <button
-            class="mx-auto bg-pink-400 text-white rounded-3xl px-20 py-3 mt-10"
+            class="mx-auto bg-pink-400 text-white rounded-3xl px-20 py-3 mt-10 mb-20 w-5/6 lg:w-auto"
           >
             Send
           </button>
