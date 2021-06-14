@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer w-full rounded-xl min-h-80 lg:h-80 flex flex-wrap mt-20 p-10 lg:px-40 text-white lg:block z-50">
+    <footer class="footer w-full rounded-xl min-h-80 lg:h-80 flex flex-wrap  p-10 lg:px-40 text-white lg:block z-50">
         <div class="w-full lg:w-2/6 flex flex-wrap items-start p-4 lg:float-right">
             <div class="w-full lg:w-1/2">
                 <strong class="py-2 text-xl">Community</strong>
@@ -21,8 +21,8 @@
         </div>
         <div class="w-full lg:w-4/6 flex items-center justify-center lg:justify-start lg:float-left">
             <img src="/logo.png" alt="Logo SCGF">
-            <strong class="lg:text-lg px-4">SecretChainGirl <br>
-            Foundation </strong>
+            <span class="lg:text-2xl -mt-2 px-4">SecretChainGirl <br>
+            Foundation </span>
         </div>
 
         <p class="w-full  text-center pt-3 lg:text-right lg:float-right">© 2021 SecretChainGirl Foundation</p>

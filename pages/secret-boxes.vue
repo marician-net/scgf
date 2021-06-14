@@ -2,9 +2,9 @@
   <div class="flex justify-center w-full flex-wrap pt-40 lg:pt-64 relative">
     <img class="bg-2" src="/bg2.jpg" alt="Bg 1" style="z-index:-1" />
     <main class="w-full z-10 relative">
-      <div class="w-full lg:w-4/5 mx-auto glass-card">
+      <div class="w-full lg:w-4/6 mx-auto glass-card p-10">
         <div class="flex w-full flex-wrap">
-          <h1 class="text-3xl lg:text-4xl text-black p-10">Secret Boxes</h1>
+          <h1 class="text-3xl lg:text-5xl text-black p-10">Secret Boxes</h1>
           <div class="w-full p-10 pt-0">
             <p>
               Quickstarts to help you build decentralized, privacy preserving
@@ -25,7 +25,7 @@
                   speed="1"
                   loop
                   autoplay
-                  class="w-full"
+                   class="w-5/6"
                 ></lottie-player>
               </div>
               <div class="w-full lg:w-3/4 mt-10">
@@ -103,7 +103,7 @@
                   speed="1"
                   loop
                   autoplay
-                  class="w-full"
+                  class="w-5/6"
                 ></lottie-player>
               </div>
               <div class="w-full lg:w-3/4 mt-10">
@@ -208,6 +208,11 @@
             </div>
           </div>
         </div>
+        <div class="w-full text-center text-xl py-20 text-primary">
+          <a href="#" >
+            Visit Secret Box Website
+          </a>
+        </div>
       </div>
     </main>
   </div>
@@ -234,7 +239,7 @@ export default {
   );
   backdrop-filter: blur(28px);
   /* Note: backdrop-filter has minimal browser support */
-  border-radius: 75px 0px 75px 75px;
+  border-radius: 75px 0px 0 0;
 }
 .text-gradient {
   background: linear-gradient(91.22deg, #a568ef 16%, #ff9191 103.7%);

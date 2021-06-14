@@ -2,17 +2,13 @@
   <div class="flex justify-center w-full flex-wrap pt-40 lg:pt-64">
     <img class="bg-2" src="/bg2.jpg" alt="Bg 1" style="z-index:-1" />
     <main class="w-full z-10 relative">
-     <div class="w-full lg:w-4/5 mx-auto glass-card">
+     <div class="w-full lg:w-4/6 mx-auto glass-card-explore">
         <div class="flex w-full flex-wrap">
           <h1 class="text-3xl lg:text-4xl text-black p-10">
-            Check out our Awesome Projects 🎉
+            Check out our <br> Awesome Projects 🎉
           </h1>
           <div class="w-full p-10 pt-0 ">
-            <p>
-              Secret Boxes are quickstarts to help you build decentralized,
-              privacy preserving dApps on the Secret Network.
-            </p>
-            <h1 class="text-3xl my-10 font-semibold mt-20 ">
+            <h1 class="text-3xl mb-10 font-semibold  ">
                <span class="text-gradient ">Secret Boxes</span> 
             </h1>
             <p>
@@ -25,7 +21,7 @@
                 </svg>
             </a>
 
-             <h1 class="text-3xl my-10 font-semibold mt-20 ">
+             <h1 class="text-3xl mb-10 font-semibold ">
                <span class="text-gradient ">Secret NFTs</span> 
             </h1>
             <p>
@@ -38,7 +34,7 @@
                 </svg>
             </a>
 
-             <h1 class="text-3xl my-10 font-semibold mt-20">
+             <h1 class="text-3xl mb-10 font-semibold ">
                <span class="text-gradient ">Lorem Ipsum DAO</span> 
             </h1>
             <p>
@@ -71,7 +67,7 @@ export default {
   transform: rotate(180deg);
 }
 
-.glass-card {
+.glass-card-explore {
   background: linear-gradient(
     104.93deg,
     #ffffff 3.26%,
@@ -79,7 +75,7 @@ export default {
   );
   backdrop-filter: blur(28px);
   /* Note: backdrop-filter has minimal browser support */
-  border-radius: 75px 0px 75px 75px;
+  border-radius: 75px 0px 0 0;
 }
 .text-gradient {
   background: linear-gradient(91.22deg, #A568EF 16%, #FF9191 103.7%);

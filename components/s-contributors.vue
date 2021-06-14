@@ -33,8 +33,8 @@
                 />
               </div>
               <s-sosmed-contributor class="c-hover-flex -mt-10" :sosmed="i.sosmed" :address="i.address" />
-              <span class="w-full">{{ i.name }}</span>
-              <small class="w-full">{{ i.title }}</small>
+              <span class="w-full font-bold text-xl mb-2 mt-5">{{ i.name }}</span>
+              <small class="w-full text-lg mb-2">{{ i.title }}</small>
             </div>
           </div>
 
