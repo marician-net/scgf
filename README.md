@@ -1,4 +1,4 @@
-# scgf
+# Secret Chain Girl Foundation
 
 ## Build Setup
 
