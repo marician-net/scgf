@@ -1,6 +1,6 @@
 <template>
     <div class="flex w-full flex-wrap relative">
-          <h1 class="w-full text-center text-3xl lg:text-4xl text-black p-10">
+          <h1 class="w-full text-center text-3xl lg:text-5xl text-black p-10">
             <div class="-mt-5 mb-5 w-full flex justify-center">
               <svg
                 width="32"

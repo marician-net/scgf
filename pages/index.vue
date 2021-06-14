@@ -5,7 +5,7 @@
     <main class="w-full z-10 relative">
       <div class="mx-auto text-center">
         <h1
-          class="hero-title m-auto text-center px-5 lg:px-20 text-5xl lg:text-7xl"
+          class="hero-title m-auto text-center px-5 lg:px-20 text-5xl lg:text-7xl "
         >
           <span class="text-gradient">SecretChainGirl </span>
             <br />
@@ -176,7 +176,7 @@
             Work with Us
           </h1>
           <div class="w-full lg:w-3/5 p-10 pt-0">
-            <p class="text-2xl w-5/6">
+            <p class="text-2xl pr-10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
               pulvinar suspendisse nunc a. Dictumst blandit amet nunc feugiat
               gravida. Sagittis, in iaculis vestibulum, rhoncus scelerisque

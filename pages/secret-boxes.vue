@@ -1,6 +1,6 @@
 <template>
-  <div class="flex justify-center w-full flex-wrap pt-40 lg:pt-64 relative">
-    <img class="bg-2" src="/bg2.jpg" alt="Bg 1" style="z-index:-1" />
+  <div class="flex justify-center w-full flex-wrap pt-40 lg:pt-48 relative">
+    <img class="bg-2" src="/bg2.jpg" alt="Bg 1" style="z-index: -1" />
     <main class="w-full z-10 relative">
       <div class="w-full lg:w-4/6 mx-auto glass-card p-10">
         <div class="flex w-full flex-wrap">
@@ -25,11 +25,11 @@
                   speed="1"
                   loop
                   autoplay
-                   class="w-5/6"
+                  class="w-2/3 lg:w-full lg:pr-20 mx-auto pl-24 lg:pl-0"
                 ></lottie-player>
               </div>
               <div class="w-full lg:w-3/4 mt-10">
-                <h1 class="my-3">
+                <h1 class="my-3 text-center lg:text-left">
                   <span class="text-gradient text-3xl font-semibold"
                     >Secret Counter</span
                   >
@@ -42,7 +42,16 @@
 
                   <a
                     href="#"
-                    class="btn-pink btn-icon text-white rounded-full px-8 py-2 flex items-center mt-5"
+                    class="
+                      btn-pink btn-icon
+                      text-white
+                      rounded-full
+                      px-8
+                      py-2
+                      flex
+                      items-center
+                      mt-5
+                    "
                   >
                     Learn More
                     <svg
@@ -103,12 +112,12 @@
                   speed="1"
                   loop
                   autoplay
-                  class="w-5/6"
+                  class="w-2/3 lg:w-full lg:pr-20 mx-auto pl-24 lg:pl-0"
                 ></lottie-player>
               </div>
               <div class="w-full lg:w-3/4 mt-10">
-                <h1 class="my-3">
-                  <span class="text-gradient text-3xl font-semibold"
+                <h1 class="my-3 text-center lg:text-left">
+                  <span class="text-gradient text-3xl font-semibold text-center"
                     >Figment Learn</span
                   >
                 </h1>
@@ -119,9 +128,18 @@
                   secret contract to the testnet, and even get some SCRT tokens
                   for your efforts!
 
-                   <a
+                  <a
                     href="#"
-                    class="btn-pink btn-icon text-white rounded-full px-8 py-2 flex items-center mt-5"
+                    class="
+                      btn-pink btn-icon
+                      text-white
+                      rounded-full
+                      px-8
+                      py-2
+                      flex
+                      items-center
+                      mt-5
+                    "
                   >
                     Learn More
                     <svg
@@ -182,12 +200,12 @@
                   speed="1"
                   loop
                   autoplay
-                  class="w-5/6"
+                  class="w-2/3 lg:w-full lg:pr-20 mx-auto pl-24 lg:pl-0"
                 ></lottie-player>
               </div>
               <div class="w-full lg:w-3/4 mt-10">
-                <h1 class="my-3">
-                  <span class="text-gradient text-3xl font-semibold"
+                <h1 class="my-3 text-center lg:text-left">
+                  <span class="text-gradient text-3xl font-semibold text-center"
                     >Richie Rich</span
                   >
                 </h1>
@@ -197,9 +215,18 @@
                   Millionaires’ Problem, illustrates how that can be done with
                   secret contracts.
 
-                   <a
+                  <a
                     href="#"
-                    class="btn-pink-link btn-icon text-white rounded-full px-8 py-2 flex items-center mt-5"
+                    class="
+                      btn-pink-link btn-icon
+                      text-white
+                      rounded-full
+                      px-8
+                      py-2
+                      flex
+                      items-center
+                      mt-5
+                    "
                   >
                     <span class="text-gradient">Coming Soon</span>
                   </a>
@@ -208,10 +235,8 @@
             </div>
           </div>
         </div>
-        <div class="w-full text-center text-xl py-20 text-primary">
-          <a href="#" >
-            Visit Secret Box Website
-          </a>
+        <div class="w-full text-center text-xl py-14 text-primary">
+          <a href="#"> Visit Secret Box Website </a>
         </div>
       </div>
     </main>
@@ -219,8 +244,8 @@
 </template>
 <script>
 export default {
-  scrollToTop: true
-}
+  scrollToTop: true,
+};
 </script>
 <style>
 .bg-2 {
@@ -246,10 +271,10 @@ export default {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.btn-pink-link{
-  background: #FCE3EE;;
+.btn-pink-link {
+  background: #fce3ee;
 }
-.btn-pink{
+.btn-pink {
   background: #f7b5d2;
 }
 .btn-pink:hover {

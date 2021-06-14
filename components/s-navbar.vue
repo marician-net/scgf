@@ -1,6 +1,6 @@
 <template>
   <header
-    class="navbar h-40 lg:h-80 absolute z-50 w-screen flex items-center px-10 lg:px-40"
+    class="navbar h-40 lg:h-48 absolute z-50 w-screen flex items-center px-10 lg:px-40"
   >
     <nuxt-link to="/">
       <img class="w-16 lg:w-20" src="/logo.png" alt="Logo" />
