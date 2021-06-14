@@ -12,7 +12,7 @@
                 <rect width="32" height="3" fill="#803DFF" />
               </svg>
             </div>
-            Contributor
+            Contributors
           </h1>
           <div class="w-full p-10 pt-0 lg:pt-10 flex flex-wrap">
             <div

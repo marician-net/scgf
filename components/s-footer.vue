@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer w-full rounded-xl min-h-80 lg:h-80 flex flex-wrap mt-20 p-10 lg:px-40 text-white lg:block">
+    <footer class="footer w-full rounded-xl min-h-80 lg:h-80 flex flex-wrap mt-80 p-10 lg:px-40 text-white lg:block z-50 ">
         <div class="w-full lg:w-2/6 flex flex-wrap items-start p-4 lg:float-right">
             <div class="w-full lg:w-1/2">
                 <strong class="py-2 text-xl">Community</strong>
@@ -11,10 +11,10 @@
                 </ul>
             </div>
              <div class="w-full lg:w-1/2">
-                <strong class="py-2 text-xl">Leanguage</strong>
+                <strong class="py-2 text-xl">Language</strong>
                 <ul>
-                    <li class="py-2">Enghlish</li>
-                    <li class="py-2">Chines</li>
+                    <li class="py-2">English</li>
+                    <li class="py-2">Chinese</li>
                     <li class="py-2">Spanish</li>
                 </ul>
             </div>
