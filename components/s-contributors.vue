@@ -1,6 +1,6 @@
 <template>
     <div class="flex w-full flex-wrap relative">
-          <h1 class="w-full text-center text-3xl lg:text-4xl text-black p-10">
+          <h1 class="w-full text-center text-3xl lg:text-5xl text-black p-10">
             <div class="-mt-5 mb-5 w-full flex justify-center">
               <svg
                 width="32"
@@ -12,7 +12,7 @@
                 <rect width="32" height="3" fill="#803DFF" />
               </svg>
             </div>
-            Contributor
+            Contributors
           </h1>
           <div class="w-full p-10 pt-0 lg:pt-10 flex flex-wrap">
             <div
@@ -33,8 +33,8 @@
                 />
               </div>
               <s-sosmed-contributor class="c-hover-flex -mt-10" :sosmed="i.sosmed" :address="i.address" />
-              <span class="w-full">{{ i.name }}</span>
-              <small class="w-full">{{ i.title }}</small>
+              <span class="w-full font-bold text-xl mb-2 mt-5">{{ i.name }}</span>
+              <small class="w-full text-lg mb-2">{{ i.title }}</small>
             </div>
           </div>
 

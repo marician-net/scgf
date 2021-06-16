@@ -1,24 +1,25 @@
 <template>
-  <div class="flex justify-center w-full flex-wrap pt-40 lg:pt-64">
+  <div class="flex justify-center w-full flex-wrap pt-40 lg:pt-64 mb-80">
     <img class="bg-1 " src="/bg1.jpg" alt="Bg 1" style="z-index:-1" />
 
-    <main class="w-full z-10 relative lg:mt-20">
+    <main class="w-full z-10 relative">
       <div class="mx-auto text-center">
         <h1
-          class="hero-title m-auto text-center px-5 lg:px-20 text-5xl lg:text-7xl"
+          class="hero-title m-auto text-center px-5 lg:px-20 text-5xl lg:text-7xl  tracking-wider"
         >
           <span class="text-gradient">SecretChainGirl </span>
             <br />
           <span class="text-gradient">Foundation </span>
         </h1>
         <br />
-        <p class="mx-auto text-center desc px-5 lg:px-20">
-          We’re passionate about helping developers build privacy-centric
+        <p class="mx-auto text-center desc px-5 lg:px-20 text-xl lg:text-2xl">
+          We’re passionate about helping developers build <br> privacy-centric DApps
         </p>
         <br />
         <nuxt-link to="/explore-more" class="text-primary flex justify-center mx-auto mt-16 lg:mt-0">
           Explore more
           <svg
+            class="ml-2"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -43,11 +44,12 @@
         <img class="crystal-2" src="/il/_crystal-2.png" alt="Crystal" />
         <img class="crystal-3" src="/il/_crystal-3.png" alt="Crystal" />
       </div>
+      
 
       <div class="w-full lg:w-4/5 mx-auto mt-64 lg:mt-80 glass-card py-10 secret-box">
         <div class="flex w-full flex-wrap">
-          <h1 class="text-3xl lg:text-4xl text-black p-10">
-            <div class="-mt-5 mb-5">
+          <h1 class="text-3xl lg:text-5xl text-black p-10">
+            <div class="-mt-16 mb-5">
               <svg
                 width="32"
                 height="3"
@@ -60,14 +62,15 @@
             </div>
             Secret Boxes
           </h1>
-          <div class="w-full lg:w-2/3 p-10 pt-0 lg:pt-10">
-            <p>
+          <div class="w-full lg:w-2/3 p-10 pt-0">
+            <p class="text-2xl">
               Secret Boxes are quickstarts to help you build decentralized,
               privacy preserving dApps on the Secret Network.
             </p>
             <nuxt-link to="secret-boxes" class="text-primary flex mt-3">
               Explore more
               <svg
+                class="ml-2"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -93,7 +96,7 @@
                 autoplay
                 class="w-5/6"
               ></lottie-player>
-              <strong class="w-full text-center">Secret Counter</strong>
+              <strong class="w-full text-center font-normal text-xl">Secret Counter</strong>
             </div>
             <div class="w-1/2 lg:w-1/3 p-4 flex flex-wrap justify-center">
               <lottie-player
@@ -104,7 +107,7 @@
                 autoplay
                 class="w-5/6"
               ></lottie-player>
-              <strong class="w-full text-center">Figmen Lern</strong>
+              <strong class="w-full text-center font-normal text-xl">Figmen Learn</strong>
             </div>
             <div class="w-1/2 lg:w-1/3 p-4 flex flex-wrap justify-center">
               <lottie-player
@@ -115,14 +118,14 @@
                 autoplay
                 class="w-5/6"
               ></lottie-player>
-              <strong class="w-full text-center">Richie Rich</strong>
+              <strong class="w-full text-center font-normal text-xl">Richie Rich</strong>
             </div>
           </div>
         </div>
       </div>
       <div class="w-full lg:w-4/5 mx-auto mt-10 lg:mt-40 about">
         <div class="flex w-full flex-wrap">
-          <h1 class="text-3xl lg:text-4xl text-black p-10">
+          <h1 class="text-3xl lg:text-5xl text-black p-10 pt-0">
             <div class="-mt-5 mb-5 flex items-center">
               <svg
                 width="32"
@@ -137,32 +140,15 @@
             </div>
             Mission
           </h1>
-          <div class="w-full lg:w-2/3 p-10 pt-0 lg:pt-10">
-            <p>
+          <div class="w-full lg:w-2/3 p-10 pt-0">
+            <p class="text-2xl">
               Developer adoption of the Secret Network by creating Secret Boxes
               for key use cases. Passionate about helping developers create
               beautifully designed Secret Apps.
             </p>
-            <button class="text-primary flex mt-3">
-              Explore more
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M3.59426 10.8107C3.20414 10.8603 2.90205 11.1983 2.90205 11.6076C2.90205 12.051 3.25657 12.4109 3.69351 12.4109L17.6059 12.4109L12.5797 17.4904L12.5086 17.5724C12.2717 17.8865 12.2952 18.338 12.5776 18.6267C12.8858 18.9404 13.3871 18.9415 13.6962 18.6288L20.0805 12.1763L20.1509 12.0955C20.258 11.9542 20.3137 11.7816 20.3137 11.6076C20.3137 11.5037 20.2937 11.3998 20.2536 11.3014C20.1312 11.0004 19.8431 10.8045 19.5223 10.8045L3.69351 10.8045L3.59426 10.8107ZM12.5775 4.58897C12.2694 4.90383 12.2694 5.41254 12.5796 5.72528L16.101 9.28403L16.1823 9.3559C16.4933 9.59541 16.9372 9.57045 17.2196 9.2819C17.3737 9.12442 17.4507 8.91993 17.4507 8.71534C17.4507 8.50863 17.3737 8.30298 17.2175 8.1456L13.6972 4.58684L13.6159 4.51517C13.3047 4.27643 12.86 4.30129 12.5775 4.58897Z"
-                  fill="#6900F4"
-                />
-              </svg>
-            </button>
           </div>
           <img
-            class="mt-10 lg:mt-20 w-full lg:w-2/3"
+            class=" w-full lg:w-3/4 lg:-ml-20 "
             src="/il/rocket-mission.png"
             alt="Rocket Mission"
           />
@@ -175,7 +161,7 @@
 
       <div class="w-full lg:w-4/5 mx-auto p-2 mt-10 lg:mt-40 lg:px-10 work-with-us">
         <div class="flex w-full flex-wrap items-start">
-          <h1 class="w-full text-3xl lg:text-4xl text-black p-10">
+          <h1 class="w-full text-3xl lg:text-5xl text-black p-10">
             <div class="-mt-5 mb-5">
               <svg
                 width="32"
@@ -190,7 +176,7 @@
             Work with Us
           </h1>
           <div class="w-full lg:w-3/5 p-10 pt-0">
-            <p>
+            <p class="text-2xl pr-10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
               pulvinar suspendisse nunc a. Dictumst blandit amet nunc feugiat
               gravida. Sagittis, in iaculis vestibulum, rhoncus scelerisque
@@ -200,8 +186,9 @@
               purus. Dolor augue eu sit in.
             </p>
             <nuxt-link to="/work-with-us" class="text-primary flex mt-3">
-              Explore more
+              Let's go
               <svg
+               class="ml-2"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -306,7 +293,7 @@ export default {
   width: 593px;
   height: 593px;
   left: -416px;
-  top: 100%;
+  top: 3548px;
   background: linear-gradient(
       180deg,
       #e9eef3 0%,
@@ -341,45 +328,45 @@ export default {
 }
 .card-line-1 {
   position: absolute;
-  top: 150px;
+  top: 180px;
   left: 15%;
   width: 20%;
 }
 
 .card-line-2 {
   position: absolute;
-  top: 200px;
+  top: 230px;
   right: 15%;
   width: 20%;
 }
 
 .card-line-3 {
   position: absolute;
-  top: 300px;
+  top: 330px;
   left: 20%;
   width: 20%;
 }
 .crystal {
   position: absolute;
-  top: 50px;
+  top: 80px;
   right: 15%;
   width: 10%;
 }
 .crystal-1 {
   position: absolute;
-  top: 340px;
+  top: 480px;
   left: 15%;
   width: 5%;
 }
 .crystal-2 {
   position: absolute;
-  top: 300px;
+  top: 330px;
   right: 15%;
   width: 10%;
 }
 .crystal-3 {
   position: absolute;
-  top: 120px;
+  top: 150px;
   left: 13%;
   width: 8%;
 }

@@ -104,7 +104,7 @@
                 autoplay
                 class="w-5/6"
               ></lottie-player>
-              <strong class="w-full text-center">Figmen Lern</strong>
+              <strong class="w-full text-center">Figmen Learn</strong>
             </div>
             <div class="w-1/2 lg:w-1/3 p-4 flex flex-wrap justify-center">
               <lottie-player
@@ -258,6 +258,8 @@ export default {
 };
 </script>
 <style>
+
+
 .bg-gradient-1 {
   position: absolute;
   width: 593px;
@@ -307,7 +309,7 @@ export default {
   width: 593px;
   height: 593px;
   left: -416px;
-  top: 100%;
+  top: 3548px;
   background: linear-gradient(
       180deg,
       #e9eef3 0%,
@@ -342,45 +344,45 @@ export default {
 }
 .card-line-1 {
   position: absolute;
-  top: 150px;
+  top: 180px;
   left: 15%;
   width: 20%;
 }
 
 .card-line-2 {
   position: absolute;
-  top: 200px;
+  top: 230px;
   right: 15%;
   width: 20%;
 }
 
 .card-line-3 {
   position: absolute;
-  top: 300px;
+  top: 330px;
   left: 20%;
   width: 20%;
 }
 .crystal {
   position: absolute;
-  top: 50px;
+  top: 80px;
   right: 15%;
   width: 10%;
 }
 .crystal-1 {
   position: absolute;
-  top: 340px;
+  top: 480px;
   left: 15%;
   width: 5%;
 }
 .crystal-2 {
   position: absolute;
-  top: 300px;
+  top: 330px;
   right: 15%;
   width: 10%;
 }
 .crystal-3 {
   position: absolute;
-  top: 120px;
+  top: 150px;
   left: 13%;
   width: 8%;
 }
