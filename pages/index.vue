@@ -244,6 +244,7 @@ export default {
 };
 </script>
 <style>
+
 .bg-gradient-1 {
   position: absolute;
   width: 593px;
