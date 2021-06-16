@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center w-full flex-wrap pt-40 lg:pt-64">
+  <div class="flex justify-center w-full flex-wrap pt-40 lg:pt-64  mb-80">
     <img class="bg-1" src="/bg1.jpg" alt="Bg 1" style="z-index:-1" />
 
     <main class="w-full z-10 relative lg:mt-20">
@@ -46,7 +46,7 @@
 
      <div class="w-full lg:w-4/5 mx-auto mt-64 lg:mt-80 glass-card py-10 secret-box">
         <div class="flex w-full flex-wrap">
-         <h1 class="text-3xl lg:text-5xl text-black p-10">
+         <h1 class="text-3xl lg:text-5xl font-semibold text-black p-10">
              <div class="-mt-16 mb-5">
               <svg
                 width="32"
@@ -60,7 +60,7 @@
             </div>
             Secret Boxes
           </h1>
-            <div class="w-full lg:w-2/3 p-10 pt-0">
+            <div class="w-full lg:w-3/5 p-10 pt-0">
             <p class="text-2xl">
               Secret Boxes are quickstarts to help you build decentralized,
               privacy preserving dApps on the Secret Network.
@@ -93,7 +93,7 @@
                 autoplay
                 class="w-5/6"
               ></lottie-player>
-              <strong class="w-full text-center">Secret Counter</strong>
+              <strong class="w-full text-center font-normal text-xl">Secret Counter</strong>
             </div>
             <div class="w-1/2 lg:w-1/3 p-4 flex flex-wrap justify-center">
               <lottie-player
@@ -104,7 +104,7 @@
                 autoplay
                 class="w-5/6"
               ></lottie-player>
-              <strong class="w-full text-center">Figmen Learn</strong>
+              <strong class="w-full text-center font-normal text-xl">Figmen Learn</strong>
             </div>
             <div class="w-1/2 lg:w-1/3 p-4 flex flex-wrap justify-center">
               <lottie-player
@@ -115,14 +115,14 @@
                 autoplay
                 class="w-5/6"
               ></lottie-player>
-              <strong class="w-full text-center">Richie Rich</strong>
+              <strong class="w-full text-center font-normal text-xl">Richie Rich</strong>
             </div>
           </div>
         </div>
       </div>
       <div class="w-full lg:w-4/5 mx-auto mt-10 lg:mt-40 about">
         <div class="flex w-full flex-wrap">
-          <h1 class="text-3xl lg:text-5xl text-black p-10 pt-0">
+          <h1 class="text-3xl lg:text-5xl font-semibold text-black p-10 pt-0">
             <div class="-mt-5 mb-5 flex items-center">
               <svg
                 width="32"
