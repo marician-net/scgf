@@ -48,7 +48,7 @@
 
       <div class="w-full lg:w-4/5 mx-auto mt-64 lg:mt-80 glass-card py-10 secret-box">
         <div class="flex w-full flex-wrap">
-          <h1 class="text-3xl lg:text-5xl text-black p-10">
+          <h1 class="text-3xl lg:text-5xl font-semibold text-black p-10">
             <div class="-mt-16 mb-5">
               <svg
                 width="32"
@@ -62,7 +62,7 @@
             </div>
             Secret Boxes
           </h1>
-          <div class="w-full lg:w-2/3 p-10 pt-0">
+          <div class="w-full lg:w-3/5 p-10 pt-0">
             <p class="text-2xl">
               Secret Boxes are quickstarts to help you build decentralized,
               privacy preserving dApps on the Secret Network.
@@ -125,7 +125,7 @@
       </div>
       <div class="w-full lg:w-4/5 mx-auto mt-10 lg:mt-40 about">
         <div class="flex w-full flex-wrap">
-          <h1 class="text-3xl lg:text-5xl text-black p-10 pt-0">
+          <h1 class="text-3xl lg:text-5xl font-semibold text-black p-10 pt-0">
             <div class="-mt-5 mb-5 flex items-center">
               <svg
                 width="32"
@@ -244,6 +244,7 @@ export default {
 };
 </script>
 <style>
+
 .bg-gradient-1 {
   position: absolute;
   width: 593px;
