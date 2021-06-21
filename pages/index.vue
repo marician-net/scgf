@@ -14,7 +14,7 @@
       <img class="bg-il-1" src="/il-1.png" alt="Il 1" />
       <div class="bg-b"></div>
     </section>
-    <section class="secret-boxes">
+    <section class="secret-boxes" id="secret-boxes">
       <div class="secret-box-title">
         <div class="secret-box-subtitle">
           <svg
@@ -56,7 +56,7 @@
         </div>
       </div>
     </section>
-    <section class="mission">
+    <section class="mission" id="about">
       <div class="mission-title">
         <div class="mission-subtitle">
           <svg
@@ -81,7 +81,7 @@
         <img src="/rocket-mission.png" alt="Mission" />
       </div>
     </section>
-    <section class="contributors">
+    <section class="contributors" id="contributors">
       <div class="contributor-title">
         <div class="contributor-subtitle">
           <svg
@@ -98,7 +98,7 @@
       </div>
       <s-contributors />
     </section>
-    <section class="work">
+    <section class="work" id="work-with-us">
       <div class="work-title">
         <div class="work-subtitle">
           <svg

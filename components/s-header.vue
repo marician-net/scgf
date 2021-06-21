@@ -8,7 +8,94 @@
             <path d="M4 24H28" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </div>
-        <ul :class="(openMenu) ? 'mobile-menu' : '' ">
+        <ul v-if="$route.path == '/' || $route.path == '/index2'" 
+        :class="(openMenu) ? 'mobile-menu' : '' ">
+            <li class="mobile-only">
+                <img src="/bg-mobile-menu.png" class="mobile-only bg-mobile-menu">
+
+                <img class="logo-menu" src="/logo-full.png" alt="Logo">
+                <svg class="close-btn" @click="openMenu = false" width="48" height="32" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 8L8 24" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 8L24 24" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+            </li>
+            <li v-scroll-to="{
+                    el: '#secret-boxes',
+                    container: 'body',
+                    duration: 500,
+                    lazy: false,
+                    easing: 'linear',
+                    offset: -200,
+                    force: true,
+                    cancelable: true,
+                    onStart: onStart,
+                    onDone: onDone,
+                    onCancel: onCancel,
+                    x: false,
+                    y: true
+                }">
+                <h6 class="body-1">
+                    <svg class="mobile-only" width="32" height="3" viewBox="0 0 32 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="3" fill="#803DFF"/>
+                    </svg>
+                    <br class="mobile-only">
+                    Secret Boxes</h6>
+            </li>
+            <li v-scroll-to="{
+                    el: '#about',
+                    container: 'body',
+                    duration: 500,
+                    lazy: false,
+                    easing: 'linear',
+                    offset: -200,
+                    force: true,
+                    cancelable: true,
+                    onStart: onStart,
+                    onDone: onDone,
+                    onCancel: onCancel,
+                    x: false,
+                    y: true
+                }">
+                <h6  class="body-1">About</h6>
+            </li>
+            <li v-scroll-to="{
+                    el: '#contributors',
+                    container: 'body',
+                    duration: 500,
+                    lazy: false,
+                    easing: 'linear',
+                    offset: -200,
+                    force: true,
+                    cancelable: true,
+                    onStart: onStart,
+                    onDone: onDone,
+                    onCancel: onCancel,
+                    x: false,
+                    y: true
+                }">
+                <h6 class="body-1">Contributors</h6>
+            </li>
+            <li  v-scroll-to="{
+                    el: '#work-with-us',
+                    container: 'body',
+                    duration: 500,
+                    lazy: false,
+                    easing: 'linear',
+                    offset: -200,
+                    force: true,
+                    cancelable: true,
+                    onStart: onStart,
+                    onDone: onDone,
+                    onCancel: onCancel,
+                    x: false,
+                    y: true
+                }">
+                <h6 class="body-1">Work with us</h6>
+            </li>
+        </ul>
+
+         <ul v-else :class="(openMenu) ? 'mobile-menu' : '' ">
             <li class="mobile-only">
                 <img src="/bg-mobile-menu.png" class="mobile-only bg-mobile-menu">
 
@@ -27,10 +114,10 @@
                     <br class="mobile-only">
                     Secret Boxes</h6>
             </li>
-            <li @click="scrollToMenu('')">
+            <li @click="scrollToMenu('#about')">
                 <h6  class="body-1">About</h6>
             </li>
-            <li @click="scrollToMenu('')">
+            <li @click="scrollToMenu('#contributor')">
                 <h6 class="body-1">Contributors</h6>
             </li>
             <li @click="scrollToMenu('work-with-us')">
