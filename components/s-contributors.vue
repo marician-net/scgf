@@ -20,6 +20,7 @@
                       src="/filter.jpg"
                       alt="filter"
                     />
+
                 <s-sosmed-contributor  :sosmed="i.sosmed" :address="i.address" />
 
               </div>
@@ -83,14 +84,25 @@
       position: absolute;
       top:30%;
       display: none;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 10%;
+        @media only screen and (max-width: 500px) {
+          top:10%;
+        }
        .c-icon{
           width: 25%;
-          color: #4E4B66;
-          border: 1px solid #4E4B66;
-          border-radius: 50%;
-          padding: 8px;
           @media only screen and (max-width: 500px) {
             width: 50%;
+          }
+          svg{
+            width: 32px;
+            height: 32px;
+            padding: 8px;
+            color: #4E4B66;
+            border: 1px solid #4E4B66;
+            border-radius: 50%;
           }
         }
         .c-address{
@@ -103,7 +115,7 @@
             line-height: 24px;
           }
         }
-        .c-icon:hover{
+        .c-icon:hover svg{
           color:white;
           border: 1px solid transparent;
           background: linear-gradient(180deg, #A769EC 0%, #F28B9D 100%);
@@ -114,7 +126,7 @@
     display: block;
   }
   .contributor-list-item:hover .contributor-sosmed{
-    display: block;
+    display: flex;
   }
 }
 </style>
