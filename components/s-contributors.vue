@@ -26,6 +26,11 @@
               </div>
 
             </div>
+
+            <img class="il_cr_1" src="/il/_crystal-1.png" alt="cr 1">
+            <img class="il_cr_2" src="/il/_crystal-2.png" alt="cr 2">
+            <img class="il_cr_3" src="/il/_crystal-3.png" alt="cr 3">
+            <img class="il_cr_4" src="/il/_crystal-4.png" alt="cr 4">
       </div>
 </template>
 <style lang="scss">
@@ -93,6 +98,7 @@
         }
        .c-icon{
           width: 25%;
+          margin-bottom: 10%;
           @media only screen and (max-width: 500px) {
             width: 50%;
           }
@@ -113,6 +119,7 @@
             font-weight: 600;
             font-size: 12px;
             line-height: 24px;
+             margin-top:10px;
           }
         }
         .c-icon:hover svg{
@@ -128,5 +135,49 @@
   .contributor-list-item:hover .contributor-sosmed{
     display: flex;
   }
+
+  .il_cr_1{
+    position: absolute;
+    top:35%;
+    left:2%
+  }
+  .il_cr_2{
+    position: absolute;
+    top:20%;
+    right:2%
+  }
+  .il_cr_3{
+    position: absolute;
+    bottom:5%;
+    left:2%
+  }
+  .il_cr_4{
+    position: absolute;
+    bottom:5%;
+    right:5%
+  }
+@media only screen and (max-width: 1080px) {
+.il_cr_1{
+    width:20%;
+    left:-2%;
+    top:5%
+  }
+  .il_cr_2{
+    width:20%;
+    right:-2%;
+    top:25%
+  }
+  .il_cr_3{
+    width:20%;
+    left:-2%;
+    bottom:20%
+  }
+  .il_cr_4{
+    width:20%;
+    right:-2%;
+    bottom:-5%
+
+  }
+}
 }
 </style>

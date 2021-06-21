@@ -269,6 +269,7 @@
 }
 
 .secret-boxes {
+  margin-top: -88px;
   width: 88%;
   margin-left: 12%;
   padding: 43px 24px;
@@ -279,10 +280,8 @@
   background:white;
   background: linear-gradient(104.93deg, #FFFFFF 3.26%, rgba(255, 255, 255, 0) 92.12%);
   backdrop-filter: blur(28px);
-/* Note: backdrop-filter has minimal browser support */
-
-border-radius: 75px 0px 75px 75px;
-  z-index: 5;
+  border-radius: 75px 0px 75px 75px;
+  z-index: 100;
   position: relative;
   @media only screen and (max-width: 1080px) {
     width: 100%;
