@@ -381,10 +381,10 @@ border-radius: 75px 0px 75px 75px;
 
 .mission {
   padding: 0 24px;
-  width: 88%;
-  margin-left: 12%;
+  width: 90%;
+  margin-left: 10%;
   padding: 43px;
-  padding-right: 12%;
+  padding-right: 10%;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -496,6 +496,11 @@ border-radius: 75px 0px 75px 75px;
   margin-left: 10%;
   margin-bottom: 100px;
   margin-top: 150px;
+  padding:50px;
+
+  @media only screen and (max-width: 1080px) {
+    padding:0;
+  }
 
   .work-title {
     width: 100%;
@@ -517,8 +522,10 @@ border-radius: 75px 0px 75px 75px;
 
   .work-content {
     display: flex;
-    flex-wrap: wrap;
     margin-top: 50px;
+    @media only screen and (max-width: 1080px) {
+       flex-wrap: wrap;
+    }
     .work-content-left {
       width: 55%;
       font-family: "Poppins";

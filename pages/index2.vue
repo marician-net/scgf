@@ -155,7 +155,8 @@
           </nuxt-link>
         </div>
         <div class="work-content-right">
-           <lottie-player class="img" src="https://assets7.lottiefiles.com/private_files/lf30_bxgf8h5h.json" 
+           <lottie-player class="img" 
+           src="https://assets7.lottiefiles.com/private_files/lf30_bxgf8h5h.json" 
           background="transparent" speed="1" loop autoplay></lottie-player>
         </div>
       </div>
@@ -522,6 +523,10 @@ export default {};
   margin-left: 10%;
   margin-bottom: 100px;
   margin-top: 150px;
+  padding:50px;
+  @media only screen and (max-width: 1080px) {
+    padding:0;
+  }
 
   .work-title {
     width: 100%;
@@ -543,8 +548,11 @@ export default {};
 
   .work-content {
     display: flex;
-    flex-wrap: wrap;
     margin-top: 50px;
+     @media only screen and (max-width: 1080px) {
+       flex-wrap: wrap;
+      }
+
     .work-content-left {
       width: 55%;
       font-family: "Poppins";
