@@ -1,0 +1,30 @@
+
+
+@import "./typography.css";
+@import "./color.css";
+@import "./component.css";
+
+html {
+    font-family:'Segoe UI';
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.lottie-box{
+  width: 173px;
+  margin:auto;
+}
+
+@media only screen and (max-width: 1080px) {
+    .lottie-box{
+        width: 121px;
+      }
+}

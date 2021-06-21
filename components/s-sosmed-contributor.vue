@@ -1,5 +1,5 @@
 <template>
-  <div class="z-10 absolute h-full w-full flex flex-wrap items-center justify-center">
+  <div class="contributor-sosmed">
     <a
       :class="iconClass"
       v-if="sosmed.instagram"
@@ -28,8 +28,8 @@
       target="_BLANK"
     >
       <svg
-        width="8"
-        height="16"
+        width="14"
+        height="14"
         viewBox="0 0 8 16"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -47,8 +47,8 @@
       target="_BLANK"
     >
       <svg
-        width="15"
-        height="12"
+        width="14"
+        height="14"
         viewBox="0 0 15 12"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -66,8 +66,8 @@
       target="_BLANK"
     >
       <svg
-        width="12"
-        height="11"
+        width="14"
+        height="14"
         viewBox="0 0 12 11"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@
     >
       <svg
         width="14"
-        height="16"
+        height="14"
         viewBox="0 0 14 16"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@
     >
       <svg
         width="14"
-        height="10"
+        height="14"
         viewBox="0 0 14 10"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -123,8 +123,8 @@
       target="_BLANK"
     >
       <svg
-        width="13"
-        height="12"
+        width="14"
+        height="14"
         viewBox="0 0 13 12"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -142,8 +142,8 @@
       target="_BLANK"
     >
       <svg
-        width="18"
-        height="12"
+        width="14"
+        height="14"
         viewBox="0 0 18 12"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -154,9 +154,9 @@
         />
       </svg>
     </a>
-    <p class="w-full z-20 absolute mt-20">
+    <h6 class="c-address">
     {{ address }}
-    </p>
+    </h6>
   </div>
 </template>
 
@@ -165,14 +165,8 @@ export default {
   props: ["sosmed","address"],
   data() {
     return {
-      iconClass: "border border-white text-black hover:text-white rounded-full p-2 hover-bg-gradient mx-1 ",
+      iconClass: "c-icon",
     };
   },
 };
 </script>
-<style>
-.hover-bg-gradient:hover {
-  background: linear-gradient(180deg, #a769ec 0%, #f28b9d 100%);
-  border: 0;
-}
-</style>
