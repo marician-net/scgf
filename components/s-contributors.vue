@@ -1,94 +1,120 @@
 <template>
-    <div class="flex w-full flex-wrap relative">
-          <h1 class="w-full text-center text-3xl lg:text-5xl text-black p-10">
-            <div class="-mt-5 mb-5 w-full flex justify-center">
-              <svg
-                width="32"
-                height="3"
-                viewBox="0 0 32 3"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="32" height="3" fill="#803DFF" />
-              </svg>
-            </div>
-            Contributors
-          </h1>
-          <div class="w-full p-10 pt-0 lg:pt-10 flex flex-wrap">
+    <div class="contributor-list">
             <div
-              class="w-1/2 lg:w-1/4 my-2 p-2 flex flex-wrap text-center c-to-hover relative"
+              class="contributor-list-item"
               v-for="i in $store.state.contributors"
               :key="i.id"
             >
-              <div class="w-full rounded-lg relative">
+              <div class="container-item">
                 <img
-                  class="absolute w-full rounded-lg opacity-90 c-hover"
-                  src="/filter.jpg"
-                  alt="filter"
-                />
-                <img
-                  class="w-full rounded-lg"
+                  class="bg-user"
                   :src="`/user/${i.img}`"
                   :alt="`User ${i.id}`"
                 />
+                  <h6 class="c-name">{{ i.name }}</h6>
+                  <small class="body-1 c-title">{{ i.title }}</small>
+
+
+                  <img
+                      class="bg-fiter"
+                      src="/filter.jpg"
+                      alt="filter"
+                    />
+                <s-sosmed-contributor  :sosmed="i.sosmed" :address="i.address" />
+
               </div>
-              <s-sosmed-contributor class="c-hover-flex -mt-10" :sosmed="i.sosmed" :address="i.address" />
-              <span class="w-full font-bold text-xl mb-2 mt-5">{{ i.name }}</span>
-              <small class="w-full text-lg mb-2">{{ i.title }}</small>
+
             </div>
-          </div>
-
-
-        <img class="contributor_crystal" src="/il/_crystal.png" alt="Crystal" />
-        <img class="contributor_crystal-1" src="/il/_crystal-1.png" alt="Crystal" />
-        <img class="contributor_crystal-2" src="/il/_crystal-2.png" alt="Crystal" />
-        <img class="contributor_crystal-3" src="/il/_crystal-3.png" alt="Crystal" />
-        </div>
+      </div>
 </template>
-<style>
-
-.contributor_crystal {
-  position: absolute;
-  top: 50px;
-  right: -5%;
-  width: 10%;
-}
-.contributor_crystal-1 {
-  position: absolute;
-  top: 700px;
-  left: -5%;
-  width: 5%;
-}
-.contributor_crystal-2 {
-  position: absolute;
-  top: 600px;
-  right: -5%;
-  width: 10%;
-}
-.contributor_crystal-3 {
-  position: absolute;
-  top: 120px;
-  left: -5%;
-  width: 8%;
-}
-
-@media only screen and (max-width: 800px) {
-  .contributor_crystal {
-    top: 400px;
-    right: 0;
+<style lang="scss">
+.contributor-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 12%;
+  padding-top:100px;
+    @media only screen and (max-width: 1080px) {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 50px;
+    }
+  .contributor-list-item{
+    width: 25%;
+    @media only screen and (max-width: 1080px) {
+      width: 50%;
+    }
+    .container-item{
+      position: relative;
+      margin: 5%;
+      width: 90%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+      .bg-user{
+        width: 100%;
+      }
+      .c-name{
+        width: 100%;
+        padding: 16px 38px;
+        @media only screen and (max-width: 500px) {
+          padding: 8px 0;
+          font-size: 20px;
+        }
+      }
+      .c-title{
+        width: 100%;
+        padding: 16px 38px;
+        @media only screen and (max-width: 500px) {
+         padding: 8px 0;
+         font-size: 16px;
+        }
+      }
+    }
+    .bg-fiter{
+      position: absolute;
+      width: 100%;
+      opacity: 0.75;
+      display: none;
+    }
+    .contributor-sosmed{
+      position: absolute;
+      top:30%;
+      display: none;
+       .c-icon{
+          width: 25%;
+          color: #4E4B66;
+          border: 1px solid #4E4B66;
+          border-radius: 50%;
+          padding: 8px;
+          @media only screen and (max-width: 500px) {
+            width: 50%;
+          }
+        }
+        .c-address{
+          margin-top:39px;
+          @media only screen and (max-width: 500px) {
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 24px;
+          }
+        }
+        .c-icon:hover{
+          color:white;
+          border: 1px solid transparent;
+          background: linear-gradient(180deg, #A769EC 0%, #F28B9D 100%);
+        }
+    }
   }
-  .contributor_crystal-1 {
-    top: 50px;
-    left: 0;
+  .contributor-list-item:hover .bg-fiter{
+    display: block;
   }
-  .contributor_crystal-2 {
-    top: 1200px;
-    right: 0;
-  }
-  .contributor_crystal-3 {
-    top: 800px;
-    left: 0;
+  .contributor-list-item:hover .contributor-sosmed{
+    display: block;
   }
 }
-
 </style>

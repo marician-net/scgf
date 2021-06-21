@@ -1,15 +1,20 @@
 <template>
-  <div class="w-full h-screen overflow-y-scroll text-black relative overflow-x-hidden ">
-    <s-navbar />
+  <div class="main">
+    <s-header />
+
     <Nuxt />
+
     <s-footer />
+     
   </div>
 </template>
+
 <style>
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
+
+.main {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
+
 </style>

@@ -1,0 +1,30 @@
+:root{
+    --primary: #FCE3EE;
+    --primary-hover:#F7B5D2;
+    --secondary: #E3FCF1;
+    --a-yellow:#FBFCE3;
+    --a-violet:#E4E3FC;
+    --a-blue:#E3EEFC;
+    --a-purple:#A568EF;
+    --gradient-violet:linear-gradient(180deg, #CBB0E9 0%, #FAE7F2 100%);
+
+    --bg-surface:#121212;
+    --secondary-disable:#2E2E2E;
+    --bg-card:#383838;
+    --secondary-hover:#454545;
+    --bg-textfield:#555555;
+
+    --error:#CF6679;
+    --success:#00BA88;
+    --yellor:#FFD789;
+}
+
+body{
+    color: #4E4B66;
+}
+
+.text-gradient{
+    background: linear-gradient(114.44deg, #905DFF 0%, #FF70FD 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

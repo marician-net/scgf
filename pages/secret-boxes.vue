@@ -1,294 +1,318 @@
+
+
 <template>
-  <div class="flex justify-center w-full flex-wrap pt-40 lg:pt-48 relative">
-    <img class="bg-2" src="/bg2.jpg" alt="Bg 1" style="z-index: -1" />
-    <main class="w-full z-10 relative">
-      <div class="w-full lg:w-4/6 mx-auto  glass-card-boxed lg:p-10">
-        <div class="flex w-full flex-wrap">
-          <h1 class="text-3xl lg:text-5xl text-black p-10">Secret Boxes</h1>
-          <div class="w-full p-10 pt-0">
-            <p>
-              Quickstarts to help you build decentralized, privacy preserving
-              dApps on the Secret Network. Each box comes with everything you
-              need to start building and includes libraries, secret contracts
-              and beautiful UI elements so you can focus on coding your
-              functionality. Secret Boxes can be anything from use case
-              blueprints to chain integrations, technical bootstraps and more.
-            </p>
+  <div class="page-section">
+    <div class="page-container">
+      <div class="page-title">
+        Secret Boxes
+      </div>
+      <p class="page-desc">
+        Quickstarts to help you build decentralized, privacy preserving dApps on
+        the Secret Network. Each box comes with everything you need to start
+        building and includes libraries, secret contracts and beautiful UI
+        elements so you can focus on coding your functionality. Secret Boxes can
+        be anything from use case blueprints to chain integrations, technical
+        bootstraps and more.
+      </p>
+      <ul class="box-list">
+        <li>
+          <div class="box-list-item">
+            <div class="list-img">
+              <lottie-player
+                src="https://assets5.lottiefiles.com/private_files/lf30_sqamzndl.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+                class="box"
+              ></lottie-player>
+            </div>
+            <div class="list-content">
+              <h5>
+                <span class="text-gradient">Secret Counter</span>
+              </h5>
+              <p class="subtitle-2">
+                This is the starting point for learning about Secret Contracts.
+                Based on the “simple counter” secret contract this box
+                illustrates the basics of querying and modifying contract state
+                using the “getCount” and “increment” messages.
+              </p>
+              <div class="list-action">
+                <a href="#" class="btn-act-pink">
+                  Learn More
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2.47707 7.45067C2.2082 7.4848 2 7.7178 2 7.99987C2 8.30547 2.24433 8.55347 2.54547 8.55347L12.1338 8.55347L8.6698 12.0542L8.6208 12.1108C8.45747 12.3273 8.47367 12.6384 8.66833 12.8373C8.88073 13.0536 9.2262 13.0543 9.43927 12.8388L13.8393 8.3918L13.8878 8.33613C13.9616 8.23873 14 8.1198 14 7.99987C14 7.92827 13.9862 7.85667 13.9585 7.7888C13.8742 7.5814 13.6756 7.44634 13.4545 7.44634L2.54547 7.44634L2.47707 7.45067ZM8.66827 3.16267C8.45593 3.37967 8.45593 3.73027 8.66973 3.9458L11.0967 6.39847L11.1527 6.448C11.367 6.61307 11.6729 6.59587 11.8676 6.397C11.9737 6.28847 12.0268 6.14754 12.0268 6.00654C12.0268 5.86407 11.9737 5.72234 11.8661 5.61387L9.43993 3.1612L9.38389 3.1118C9.16947 2.94727 8.86293 2.9644 8.66827 3.16267Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="btn-act-icon">
+                  Repo
 
-            <!-- List -->
-
-            <div class="flex w-full flex-wrap lg:px-20">
-              <div class="w-full lg:w-1/4 mt-10">
-                <lottie-player
-                  src="https://assets5.lottiefiles.com/private_files/lf30_sqamzndl.json"
-                  background="transparent"
-                  speed="1"
-                  loop
-                  autoplay
-                  class="w-2/3 lg:w-full lg:pr-10 mx-auto pl-10 lg:pl-0"
-                ></lottie-player>
-              </div>
-              <div class="w-full lg:w-3/4 mt-10">
-                <h1 class="my-3 text-center lg:text-left">
-                  <span class="text-gradient text-3xl font-semibold"
-                    >Secret Counter</span
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16"
                   >
-                </h1>
-                <p class="flex flex-wrap">
-                  This is the starting point for learning about Secret
-                  Contracts. Based on the “simple counter” secret contract this
-                  box illustrates the basics of querying and modifying contract
-                  state using the “getCount” and “increment” messages.
-
-                  <a
-                    href="#"
-                    class="
-                      btn-pink btn-icon
-                      text-white
-                      rounded-full
-                      px-8
-                      py-2
-                      flex
-                      items-center
-                      mt-5
-                    "
-                  >
-                    Learn More
-                    <svg
-                      class="ml-2"
-                      width="12"
-                      height="10"
-                      viewBox="0 0 12 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M0.477067 4.45067C0.2082 4.4848 4.9189e-07 4.7178 5.16549e-07 4.99987C5.43265e-07 5.30547 0.244333 5.55347 0.545466 5.55347L10.1338 5.55347L6.6698 9.05423L6.6208 9.11077C6.45747 9.32726 6.47367 9.63843 6.66833 9.83734C6.88073 10.0536 7.2262 10.0543 7.43927 9.83882L11.8393 5.3918L11.8878 5.33613C11.9616 5.23873 12 5.1198 12 4.99987C12 4.92827 11.9862 4.85667 11.9585 4.7888C11.8742 4.5814 11.6756 4.44634 11.4545 4.44634L0.545466 4.44634L0.477067 4.45067ZM6.66827 0.162669C6.45593 0.379669 6.45593 0.730268 6.66973 0.945802L9.09665 3.39847L9.15269 3.448C9.36701 3.61307 9.6729 3.59587 9.86757 3.397C9.97375 3.28847 10.0268 3.14754 10.0268 3.00654C10.0268 2.86407 9.97375 2.72234 9.86611 2.61387L7.43993 0.161203L7.38389 0.111803C7.16947 -0.0527311 6.86293 -0.0355983 6.66827 0.162669Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    href="#"
-                    class="rounded-full px-8 py-2 flex items-center mt-5"
-                  >
-                    <span class="text-gradient">Repo </span>
-                    <svg
-                      class="ml-3"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8 0C3.58267 0 0 3.67255 0 8.20224C0 11.8263 2.292 14.9007 5.47133 15.9855C5.87067 16.0614 6 15.8071 6 15.5911V14.0641C3.77467 14.5603 3.31133 13.0962 3.31133 13.0962C2.94733 12.1482 2.42267 11.896 2.42267 11.896C1.69667 11.3868 2.478 11.3977 2.478 11.3977C3.28133 11.4551 3.704 12.2432 3.704 12.2432C4.41733 13.4968 5.57533 13.1345 6.032 12.9247C6.10333 12.395 6.31067 12.0327 6.54 11.8283C4.76333 11.6198 2.89533 10.9165 2.89533 7.77436C2.89533 6.87826 3.208 6.1469 3.71933 5.57274C3.63667 5.36563 3.36267 4.53106 3.79733 3.40188C3.79733 3.40188 4.46933 3.18179 5.998 4.24261C6.636 4.06079 7.32 3.96989 8 3.96647C8.68 3.96989 9.36467 4.06079 10.004 4.24261C11.5313 3.18179 12.202 3.40188 12.202 3.40188C12.6373 4.53174 12.3633 5.36632 12.2807 5.57274C12.794 6.1469 13.104 6.87895 13.104 7.77436C13.104 10.9247 11.2327 11.6185 9.45133 11.8215C9.738 12.0758 10 12.5747 10 13.3403V15.5911C10 15.8091 10.128 16.0655 10.534 15.9848C13.7107 14.8987 16 11.8249 16 8.20224C16 3.67255 12.418 0 8 0Z"
-                        fill="url(#paint0_linear)"
-                      />
-                      <defs>
-                        <linearGradient
-                          id="paint0_linear"
-                          x1="8"
-                          y1="0"
-                          x2="8"
-                          y2="16"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stop-color="#A769EC" />
-                          <stop offset="1" stop-color="#F28B9D" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </a>
-                </p>
-              </div>
-
-              <div class="w-full lg:w-1/4 mt-10">
-                <lottie-player
-                  src="https://assets2.lottiefiles.com/private_files/lf30_0vbtxqrd.json"
-                  background="transparent"
-                  speed="1"
-                  loop
-                  autoplay
-                  class="w-2/3 lg:w-full lg:pr-10 mx-auto pl-10 lg:pl-0"
-                ></lottie-player>
-              </div>
-              <div class="w-full lg:w-3/4 mt-10">
-                <h1 class="my-3 text-center lg:text-left">
-                  <span class="text-gradient text-3xl font-semibold text-center"
-                    >Figment Learn</span
-                  >
-                </h1>
-                <p class="flex flex-wrap">
-                  Figment Learn is a fun learning pathway to help developers
-                  quickly learn about working with the Secret Network. Using the
-                  DataHub gateway you’ll be taken through the steps to deploy a
-                  secret contract to the testnet, and even get some SCRT tokens
-                  for your efforts!
-
-                  <a
-                    href="#"
-                    class="
-                      btn-pink btn-icon
-                      text-white
-                      rounded-full
-                      px-8
-                      py-2
-                      flex
-                      items-center
-                      mt-5
-                    "
-                  >
-                    Learn More
-                    <svg
-                      class="ml-2"
-                      width="12"
-                      height="10"
-                      viewBox="0 0 12 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M0.477067 4.45067C0.2082 4.4848 4.9189e-07 4.7178 5.16549e-07 4.99987C5.43265e-07 5.30547 0.244333 5.55347 0.545466 5.55347L10.1338 5.55347L6.6698 9.05423L6.6208 9.11077C6.45747 9.32726 6.47367 9.63843 6.66833 9.83734C6.88073 10.0536 7.2262 10.0543 7.43927 9.83882L11.8393 5.3918L11.8878 5.33613C11.9616 5.23873 12 5.1198 12 4.99987C12 4.92827 11.9862 4.85667 11.9585 4.7888C11.8742 4.5814 11.6756 4.44634 11.4545 4.44634L0.545466 4.44634L0.477067 4.45067ZM6.66827 0.162669C6.45593 0.379669 6.45593 0.730268 6.66973 0.945802L9.09665 3.39847L9.15269 3.448C9.36701 3.61307 9.6729 3.59587 9.86757 3.397C9.97375 3.28847 10.0268 3.14754 10.0268 3.00654C10.0268 2.86407 9.97375 2.72234 9.86611 2.61387L7.43993 0.161203L7.38389 0.111803C7.16947 -0.0527311 6.86293 -0.0355983 6.66827 0.162669Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    href="#"
-                    class="rounded-full px-8 py-2 flex items-center mt-5"
-                  >
-                    <span class="text-gradient">Repo </span>
-                    <svg
-                      class="ml-3"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8 0C3.58267 0 0 3.67255 0 8.20224C0 11.8263 2.292 14.9007 5.47133 15.9855C5.87067 16.0614 6 15.8071 6 15.5911V14.0641C3.77467 14.5603 3.31133 13.0962 3.31133 13.0962C2.94733 12.1482 2.42267 11.896 2.42267 11.896C1.69667 11.3868 2.478 11.3977 2.478 11.3977C3.28133 11.4551 3.704 12.2432 3.704 12.2432C4.41733 13.4968 5.57533 13.1345 6.032 12.9247C6.10333 12.395 6.31067 12.0327 6.54 11.8283C4.76333 11.6198 2.89533 10.9165 2.89533 7.77436C2.89533 6.87826 3.208 6.1469 3.71933 5.57274C3.63667 5.36563 3.36267 4.53106 3.79733 3.40188C3.79733 3.40188 4.46933 3.18179 5.998 4.24261C6.636 4.06079 7.32 3.96989 8 3.96647C8.68 3.96989 9.36467 4.06079 10.004 4.24261C11.5313 3.18179 12.202 3.40188 12.202 3.40188C12.6373 4.53174 12.3633 5.36632 12.2807 5.57274C12.794 6.1469 13.104 6.87895 13.104 7.77436C13.104 10.9247 11.2327 11.6185 9.45133 11.8215C9.738 12.0758 10 12.5747 10 13.3403V15.5911C10 15.8091 10.128 16.0655 10.534 15.9848C13.7107 14.8987 16 11.8249 16 8.20224C16 3.67255 12.418 0 8 0Z"
-                        fill="url(#paint0_linear)"
-                      />
-                      <defs>
-                        <linearGradient
-                          id="paint0_linear"
-                          x1="8"
-                          y1="0"
-                          x2="8"
-                          y2="16"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stop-color="#A769EC" />
-                          <stop offset="1" stop-color="#F28B9D" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </a>
-                </p>
-              </div>
-
-              <div class="w-full lg:w-1/4 mt-10">
-                <lottie-player
-                  src="https://assets10.lottiefiles.com/private_files/lf30_woabmjiz.json"
-                  background="transparent"
-                  speed="1"
-                  loop
-                  autoplay
-                  class="w-2/3 lg:w-full lg:pr-10 mx-auto pl-10 lg:pl-0"
-                ></lottie-player>
-              </div>
-              <div class="w-full lg:w-3/4 mt-10">
-                <h1 class="my-3 text-center lg:text-left">
-                  <span class="text-gradient text-3xl font-semibold text-center"
-                    >Richie Rich</span
-                  >
-                </h1>
-                <p class="flex flex-wrap">
-                  How do you find out who’s the richest without revealing your
-                  net worth to the world? This secret box, based on Yao’s
-                  Millionaires’ Problem, illustrates how that can be done with
-                  secret contracts.
-
-                  <a
-                    href="#"
-                    class="
-                      btn-pink-link btn-icon
-                      text-white
-                      rounded-full
-                      px-8
-                      py-2
-                      flex
-                      items-center
-                      mt-5
-                    "
-                  >
-                    <span class="text-gradient">Coming Soon</span>
-                  </a>
-                </p>
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="w-full text-center text-xl py-14 text-primary">
-          <a href="#"> Visit Secret Box Website </a>
-        </div>
-      </div>
-    </main>
+        </li>
+        <li>
+          <div class="box-list-item">
+            <div class="list-img">
+              <lottie-player
+                src="https://assets2.lottiefiles.com/private_files/lf30_0vbtxqrd.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+                class="box"
+              ></lottie-player>
+            </div>
+            <div class="list-content">
+              <h5>
+                <span class="text-gradient">Secret Counter</span>
+              </h5>
+              <p class="subtitle-2">
+                This is the starting point for learning about Secret Contracts.
+                Based on the “simple counter” secret contract this box
+                illustrates the basics of querying and modifying contract state
+                using the “getCount” and “increment” messages.
+              </p>
+              <div class="list-action">
+                <a href="#" class="btn-act-pink">
+                  Learn More
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2.47707 7.45067C2.2082 7.4848 2 7.7178 2 7.99987C2 8.30547 2.24433 8.55347 2.54547 8.55347L12.1338 8.55347L8.6698 12.0542L8.6208 12.1108C8.45747 12.3273 8.47367 12.6384 8.66833 12.8373C8.88073 13.0536 9.2262 13.0543 9.43927 12.8388L13.8393 8.3918L13.8878 8.33613C13.9616 8.23873 14 8.1198 14 7.99987C14 7.92827 13.9862 7.85667 13.9585 7.7888C13.8742 7.5814 13.6756 7.44634 13.4545 7.44634L2.54547 7.44634L2.47707 7.45067ZM8.66827 3.16267C8.45593 3.37967 8.45593 3.73027 8.66973 3.9458L11.0967 6.39847L11.1527 6.448C11.367 6.61307 11.6729 6.59587 11.8676 6.397C11.9737 6.28847 12.0268 6.14754 12.0268 6.00654C12.0268 5.86407 11.9737 5.72234 11.8661 5.61387L9.43993 3.1612L9.38389 3.1118C9.16947 2.94727 8.86293 2.9644 8.66827 3.16267Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="btn-act-icon">
+                  Repo
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="box-list-item">
+            <div class="list-img">
+              <lottie-player
+                src="https://assets10.lottiefiles.com/private_files/lf30_woabmjiz.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+                class="box"
+              ></lottie-player>
+            </div>
+            <div class="list-content">
+              <h5>
+                <span class="text-gradient">Secret Counter</span>
+              </h5>
+              <p class="subtitle-2">
+                This is the starting point for learning about Secret Contracts.
+                Based on the “simple counter” secret contract this box
+                illustrates the basics of querying and modifying contract state
+                using the “getCount” and “increment” messages.
+              </p>
+              <div class="list-action">
+                <a href="#" class="btn-act-pink">
+                  <span class="text-gradient">Coming Soon</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 <script>
 export default {
-  scrollToTop: true,
+  scrollToTop: true
 };
 </script>
-<style>
-.bg-2 {
+
+<style lang="scss" scoped>
+.page-section {
+  padding-top: 230px;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: rotate(180deg);
-}
-.glass-card-boxed{
-  background: white;
-  border-radius: 75px 0px 0 0;
-}
-@media only screen and (min-width:800px) {  
-  .glass-card-boxed{
+  padding: 0 16%;
+  background-image: url("/bg-page-1.png");
+  background-size: cover;
+    padding-top: 250px;
+
+  @media only screen and (max-width: 1080px) {
+    padding: 0;
+    padding-top: 125px;
+  }
+  .page-container {
+    width: 100%;
     background: linear-gradient(
-      104.93deg,
-      #ffffff 3.26%,
-      rgba(255, 255, 255, 0) 92.12%
+      89.05deg,
+      #ffffff 45.73%,
+      rgba(255, 255, 255, 0) 105.23%
     );
     backdrop-filter: blur(28px);
-    border-radius: 75px 0px 0 0;
-  }
-}
+    border-radius: 40px 0px 0 0;
+    padding: 68px;
+    @media only screen and (max-width: 1080px) {
+        padding: 30px;
+    }
+    .page-title {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 50px;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      letter-spacing: 1px;
+      color: #000000;
+      margin-bottom: 28px;
 
-.text-gradient {
-  background: linear-gradient(91.22deg, #a568ef 16%, #ff9191 103.7%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.btn-pink-link {
-  background: #fce3ee;
-}
-.btn-pink {
-  background: #f7b5d2;
-}
-.btn-pink:hover {
-  background: #ff94c3;
-}
-.btn-icon svg {
-  display: none;
-}
-.btn-icon:hover svg {
-  display: block;
+      @media only screen and (max-width: 1080px) {
+        font-size: 29.7259px;
+        line-height: 31px;
+      }
+    }
+    .page-desc {
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      text-align: justify;
+      letter-spacing: 0.5px;
+      color: #1e2022;
+      max-width: 676px;
+    }
+    .box-list {
+      width: 100%;
+      padding: 50px;
+      list-style: none;
+      @media only screen and (max-width: 1080px) {
+          padding: 0;
+      }
+      li {
+        width: 100%;
+        margin-bottom:50px;
+        .box-list-item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @media only screen and (max-width: 1080px) {
+            flex-wrap: wrap;
+          }
+          .list-img {
+            .box {
+              width: 137px;
+              margin-right: 52px;
+              @media only screen and (max-width: 1080px) {
+                margin-top:30px
+              }
+            }
+          }
+          .list-content {
+            width: auto;
+
+            @media only screen and (max-width: 1080px) {
+              h5{
+                text-align: center;
+                width: 100%;
+                padding: 30px;
+              }
+            }
+            .subtitle-2 {
+              max-width: 399px;
+            }
+            .list-action {
+              padding: 15px 0;
+              display: flex;
+              .btn-act-pink {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 8px 20px;
+                background: #f7b5d2;
+                border-radius: 32px;
+                color: white;
+                svg {
+                  display: none;
+                }
+              }
+              .btn-act-pink:hover {
+                background: #ff94c3;
+              }
+              .btn-act-pink:hover svg {
+                display: block;
+                margin-left: 15px;
+              }
+              .btn-act-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 8px 20px;
+                border-radius: 32px;
+                color: #f7b5d2;
+                background: #fff;
+                background: linear-gradient(180deg, #a769ec 0%, #f28b9d 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                svg {
+                  margin-left: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 </style>

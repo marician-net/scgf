@@ -1,89 +1,125 @@
 <template>
-  <div class="flex justify-center w-full flex-wrap pt-40 lg:pt-48">
-    <img class="bg-2" src="/bg2.jpg" alt="Bg 1" style="z-index:-1" />
-    <main class="w-full z-10 relative">
-     <div class="w-full lg:w-4/6 mx-auto bg-white glass-card-explore">
-        <div class="flex w-full flex-wrap">
-          <h1 class="text-3xl lg:text-4xl text-black p-10">
-            Check out our <br> Awesome Projects 🎉
-          </h1>
-          <div class="w-full p-10 pt-0 ">
-            <h1 class="text-3xl mb-10 font-semibold  ">
-               <span class="text-gradient ">Secret Boxes</span> 
-            </h1>
-            <p>
-                Quickstarts to help you build decentralized, privacy preserving dApps on the Secret Network. Each box comes with everything you need to start building and includes libraries, secret contracts and beautiful UI elements so you can focus on coding your functionality. Secret Boxes can be anything from use case blueprints to chain integrations, technical bootstraps and more.
-            </p>
-            <a href="#" class="flex text-gradient my-10">
-                <span class="text-gradient ">Visit Secret Boxes </span>
-                <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.59417 7.20295C1.20405 7.25248 0.901958 7.59056 0.901958 7.99983C0.901958 8.44325 1.25648 8.80309 1.69341 8.80309L15.6059 8.80309L10.5797 13.8826L10.5086 13.9646C10.2716 14.2787 10.2951 14.7303 10.5775 15.0189C10.8857 15.3327 11.387 15.3337 11.6961 15.021L18.0804 8.56851L18.1508 8.48774C18.2579 8.34642 18.3136 8.17385 18.3136 7.99983C18.3136 7.89594 18.2936 7.79205 18.2535 7.69358C18.1311 7.39264 17.843 7.19667 17.5222 7.19667L1.69341 7.19667L1.59417 7.20295ZM10.5774 0.981184C10.2693 1.29605 10.2693 1.80475 10.5796 2.11749L14.101 5.67624L14.1823 5.74811C14.4932 5.98762 14.9371 5.96266 15.2195 5.67411C15.3736 5.51663 15.4506 5.31214 15.4506 5.10756C15.4506 4.90084 15.3736 4.69519 15.2174 4.53781L11.6971 0.979056L11.6158 0.907378C11.3047 0.668645 10.8599 0.693504 10.5774 0.981184Z" fill="#6900F4"/>
-                </svg>
-            </a>
+  <div class="page-section">
+    <div class="page-container">
+      <h3>
+        Check out our <br />
+        Awesome Projects 🎉
+      </h3>
+      <ul class="list-explore">
+        <li>
+          <h6>Secret Boxes</h6>
+          <p class="body-1">
+            Quickstarts to help you build decentralized, privacy preserving
+            dApps on the Secret Network. Each box comes with everything you need
+            to start building and includes libraries, secret contracts and
+            beautiful UI elements so you can focus on coding your functionality.
+            Secret Boxes can be anything from use case blueprints to chain
+            integrations, technical bootstraps and more.
+          </p>
+          <a href="#">
+            Visit Secret Boxes
 
-             <h1 class="text-3xl mb-10 font-semibold ">
-               <span class="text-gradient ">Secret NFTs</span> 
-            </h1>
-            <p>
-                Quickstarts to help you build decentralized, privacy preserving dApps on the Secret Network. Each box comes with everything you need to start building and includes libraries, secret contracts and beautiful UI elements so you can focus on coding your functionality. Secret Boxes can be anything from use case blueprints to chain integrations, technical bootstraps and more.
-            </p>
-            <a href="#" class="flex text-gradient my-10">
-                <span class="text-gradient ">Visit Secret NFTs </span>
-                <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.59417 7.20295C1.20405 7.25248 0.901958 7.59056 0.901958 7.99983C0.901958 8.44325 1.25648 8.80309 1.69341 8.80309L15.6059 8.80309L10.5797 13.8826L10.5086 13.9646C10.2716 14.2787 10.2951 14.7303 10.5775 15.0189C10.8857 15.3327 11.387 15.3337 11.6961 15.021L18.0804 8.56851L18.1508 8.48774C18.2579 8.34642 18.3136 8.17385 18.3136 7.99983C18.3136 7.89594 18.2936 7.79205 18.2535 7.69358C18.1311 7.39264 17.843 7.19667 17.5222 7.19667L1.69341 7.19667L1.59417 7.20295ZM10.5774 0.981184C10.2693 1.29605 10.2693 1.80475 10.5796 2.11749L14.101 5.67624L14.1823 5.74811C14.4932 5.98762 14.9371 5.96266 15.2195 5.67411C15.3736 5.51663 15.4506 5.31214 15.4506 5.10756C15.4506 4.90084 15.3736 4.69519 15.2174 4.53781L11.6971 0.979056L11.6158 0.907378C11.3047 0.668645 10.8599 0.693504 10.5774 0.981184Z" fill="#6900F4"/>
-                </svg>
-            </a>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.59417 10.8107C3.20405 10.8603 2.90196 11.1983 2.90196 11.6076C2.90196 12.051 3.25648 12.4109 3.69341 12.4109L17.6059 12.4109L12.5797 17.4904L12.5086 17.5724C12.2716 17.8865 12.2951 18.338 12.5775 18.6267C12.8857 18.9404 13.387 18.9415 13.6961 18.6288L20.0804 12.1763L20.1508 12.0955C20.2579 11.9542 20.3136 11.7816 20.3136 11.6076C20.3136 11.5037 20.2936 11.3998 20.2535 11.3014C20.1311 11.0004 19.843 10.8045 19.5222 10.8045L3.69341 10.8045L3.59417 10.8107ZM12.5774 4.58897C12.2693 4.90383 12.2693 5.41254 12.5796 5.72528L16.101 9.28403L16.1823 9.3559C16.4932 9.59541 16.9371 9.57045 17.2195 9.2819C17.3736 9.12442 17.4506 8.91993 17.4506 8.71534C17.4506 8.50863 17.3736 8.30298 17.2174 8.1456L13.6971 4.58684L13.6158 4.51517C13.3047 4.27643 12.8599 4.30129 12.5774 4.58897Z"
+                fill="#6900F4"
+              />
+            </svg>
+          </a>
+        </li>
+         <li>
+          <h6>Secret NFTs</h6>
+          <p class="body-1">
+            Quickstarts to help you build decentralized, privacy preserving dApps on the Secret Network. Each box comes with everything you need to start building and includes libraries, secret contracts and beautiful UI elements so you can focus on coding your functionality. Secret Boxes can be anything from use case blueprints to chain integrations, technical bootstraps and more.
+          </p>
+          <a href="#">
+            Learn More Secret NFTs
 
-             <h1 class="text-3xl mb-10 font-semibold ">
-               <span class="text-gradient ">Lorem Ipsum DAO</span> 
-            </h1>
-            <p>
-                Quickstarts to help you build decentralized, privacy preserving dApps on the Secret Network. Each box comes with everything you need to start building and includes libraries, secret contracts and beautiful UI elements so you can focus on coding your functionality. Secret Boxes can be anything from use case blueprints to chain integrations, technical bootstraps and more.
-            </p>
-            <a href="#" class="flex text-gradient my-10">
-                <span class="text-gradient ">Visit Lorem Ipsum DAO</span>
-                <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.59417 7.20295C1.20405 7.25248 0.901958 7.59056 0.901958 7.99983C0.901958 8.44325 1.25648 8.80309 1.69341 8.80309L15.6059 8.80309L10.5797 13.8826L10.5086 13.9646C10.2716 14.2787 10.2951 14.7303 10.5775 15.0189C10.8857 15.3327 11.387 15.3337 11.6961 15.021L18.0804 8.56851L18.1508 8.48774C18.2579 8.34642 18.3136 8.17385 18.3136 7.99983C18.3136 7.89594 18.2936 7.79205 18.2535 7.69358C18.1311 7.39264 17.843 7.19667 17.5222 7.19667L1.69341 7.19667L1.59417 7.20295ZM10.5774 0.981184C10.2693 1.29605 10.2693 1.80475 10.5796 2.11749L14.101 5.67624L14.1823 5.74811C14.4932 5.98762 14.9371 5.96266 15.2195 5.67411C15.3736 5.51663 15.4506 5.31214 15.4506 5.10756C15.4506 4.90084 15.3736 4.69519 15.2174 4.53781L11.6971 0.979056L11.6158 0.907378C11.3047 0.668645 10.8599 0.693504 10.5774 0.981184Z" fill="#6900F4"/>
-                </svg>
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </main>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.59417 10.8107C3.20405 10.8603 2.90196 11.1983 2.90196 11.6076C2.90196 12.051 3.25648 12.4109 3.69341 12.4109L17.6059 12.4109L12.5797 17.4904L12.5086 17.5724C12.2716 17.8865 12.2951 18.338 12.5775 18.6267C12.8857 18.9404 13.387 18.9415 13.6961 18.6288L20.0804 12.1763L20.1508 12.0955C20.2579 11.9542 20.3136 11.7816 20.3136 11.6076C20.3136 11.5037 20.2936 11.3998 20.2535 11.3014C20.1311 11.0004 19.843 10.8045 19.5222 10.8045L3.69341 10.8045L3.59417 10.8107ZM12.5774 4.58897C12.2693 4.90383 12.2693 5.41254 12.5796 5.72528L16.101 9.28403L16.1823 9.3559C16.4932 9.59541 16.9371 9.57045 17.2195 9.2819C17.3736 9.12442 17.4506 8.91993 17.4506 8.71534C17.4506 8.50863 17.3736 8.30298 17.2174 8.1456L13.6971 4.58684L13.6158 4.51517C13.3047 4.27643 12.8599 4.30129 12.5774 4.58897Z"
+                fill="#6900F4"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 <script>
 export default {
   scrollToTop: true
-}
+};
 </script>
-<style>
-.bg-2 {
+
+<style lang="scss" scoped>
+.page-section {
+  padding-top: 230px;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: rotate(180deg);
-}
-.glass-card-explore{
-  border-radius: 75px 0px 0 0;
-}
-@media only screen and (min-width:800px) {  
-  .glass-card-explore {
+  padding: 0 16%;
+  background-image: url("/bg-page-1.png");
+  background-size: cover;
+  padding-top: 250px;
+
+  @media only screen and (max-width: 1080px) {
+    padding: 0;
+    padding-top: 125px;
+  }
+  .page-container {
+    width: 100%;
     background: linear-gradient(
-      104.93deg,
-      #ffffff 3.26%,
-      rgba(255, 255, 255, 0) 92.12%
+      89.05deg,
+      #ffffff 45.73%,
+      rgba(255, 255, 255, 0) 105.23%
     );
     backdrop-filter: blur(28px);
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 75px 0px 0 0;
+    border-radius: 40px 0px 0 0;
+    padding: 68px;
+    @media only screen and (max-width: 1080px) {
+      padding: 30px;
+    }
+    .list-explore {
+      list-style: none;
+      li{
+        margin-top: 53px;
+      }
+      li p {
+        padding: 24px 0;
+      }
+      li a {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 1.25px;
+        text-transform: capitalize;
+
+        color: #6900f4;
+      }
+    }
   }
-}
-.text-gradient {
-  background: linear-gradient(91.22deg, #A568EF 16%, #FF9191 103.7%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 </style>
