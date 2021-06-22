@@ -297,6 +297,7 @@ export default {};
 }
 
 .secret-boxes {
+  margin-top: -88px;
   width: 88%;
   margin-left: 12%;
   padding: 43px 24px;
@@ -304,13 +305,12 @@ export default {};
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  background: linear-gradient(
-    104.93deg,
-    #ffffff 3.26%,
-    rgba(255, 255, 255, 0) 92.12%
-  );
+  background:white;
+  background: linear-gradient(104.93deg, #FFFFFF 3.26%, rgba(255, 255, 255, 0) 92.12%);
   backdrop-filter: blur(28px);
   border-radius: 75px 0px 75px 75px;
+  z-index: 100;
+  position: relative;
   @media only screen and (max-width: 1080px) {
     width: 100%;
     margin-left: 0%;
@@ -610,7 +610,6 @@ export default {};
     #ff9191;
   filter: blur(400px);
   opacity: 0.6;
-  z-index: -1;
 }
 .bg-gradient-2 {
   position: absolute;
@@ -628,7 +627,6 @@ export default {};
     #ff9191;
   filter: blur(400px);
   opacity: 0.6;
-  z-index: -1;
 }
 .bg-gradient-3 {
   position: absolute;
@@ -639,7 +637,6 @@ export default {};
   background: linear-gradient(0deg, #ff9191, #ff9191), #ff9191;
   opacity: 0.6;
   filter: blur(400px);
-  z-index: -1;
 }
 .bg-gradient-4 {
   position: absolute;
