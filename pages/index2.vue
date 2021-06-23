@@ -15,7 +15,7 @@
 
       <div class="bg-b"></div>
     </section>
-    <section class="secret-boxes">
+    <section class="secret-boxes" id="secret-boxes">
       <div class="secret-box-title">
         <div class="secret-box-subtitle">
           <svg
@@ -41,42 +41,41 @@
       </div>
       <div class="box-list">
         <div class="box-list-item">
-           <lottie-player
-                src="https://assets5.lottiefiles.com/private_files/lf30_sqamzndl.json"
-                background="transparent"
-                speed="1"
-                loop
-                autoplay
-                class="lottie-box"
+          <lottie-player
+            src="https://assets5.lottiefiles.com/private_files/lf30_sqamzndl.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+            class="lottie-box"
           ></lottie-player>
           <span>Secret Counter</span>
         </div>
         <div class="box-list-item">
           <lottie-player
-                src="https://assets2.lottiefiles.com/private_files/lf30_0vbtxqrd.json"
-                background="transparent"
-                speed="1"
-                loop
-                autoplay
-                 class="lottie-box"
-              ></lottie-player>
+            src="https://assets2.lottiefiles.com/private_files/lf30_0vbtxqrd.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+            class="lottie-box"
+          ></lottie-player>
           <span>Figment Learn</span>
         </div>
         <div class="box-list-item">
-         <lottie-player
-                src="https://assets10.lottiefiles.com/private_files/lf30_woabmjiz.json"
-                background="transparent"
-                speed="1"
-                loop
-                autoplay
-                class="lottie-box"
-
-              ></lottie-player>
+          <lottie-player
+            src="https://assets10.lottiefiles.com/private_files/lf30_woabmjiz.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+            class="lottie-box"
+          ></lottie-player>
           <span>Richie Rich</span>
         </div>
       </div>
     </section>
-    <section class="mission">
+    <section class="mission" id="about">
       <div class="mission-title">
         <div class="mission-subtitle">
           <svg
@@ -98,12 +97,17 @@
         designed Secret Apps.
       </div>
       <div class="mission-img">
-          <lottie-player class="img" src="https://assets3.lottiefiles.com/private_files/lf30_iakk850x.json" 
-          background="transparent" speed="1" 
-          loop autoplay></lottie-player>
+        <lottie-player
+          class="img"
+          src="https://assets3.lottiefiles.com/private_files/lf30_iakk850x.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
     </section>
-    <section class="contributors">
+    <section class="contributors" id="contributors">
       <div class="contributor-title">
         <div class="contributor-subtitle">
           <svg
@@ -120,7 +124,7 @@
       </div>
       <s-contributors />
     </section>
-    <section class="work">
+    <section class="work" id="work-with-us">
       <div class="work-title">
         <div class="work-subtitle">
           <svg
@@ -138,16 +142,18 @@
       <div class="work-content">
         <div class="work-content-left">
           <p class="work-text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam pulvinar
-            suspendisse nunc a. Dictumst blandit amet nunc feugiat gravida.
-            Sagittis, in iaculis vestibulum, rhoncus scelerisque scelerisque
-            dignissim odio. Amet nisl, tristique sed pharetra molestie donec elit
-            rutrum quisque. Eget augue non mauris est. Eu sed et est lorem enim
-            morbi. Viverra aliquet cursus habitant dolor purus. Dolor augue eu sit
-            in.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
+            pulvinar suspendisse nunc a. Dictumst blandit amet nunc feugiat
+            gravida. Sagittis, in iaculis vestibulum, rhoncus scelerisque
+            scelerisque dignissim odio. Amet nisl, tristique sed pharetra
+            molestie donec elit rutrum quisque. Eget augue non mauris est. Eu
+            sed et est lorem enim morbi. Viverra aliquet cursus habitant dolor
+            purus. Dolor augue eu sit in.
           </p>
           <p class="work-text-md">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam pulvinar suspendisse nunc a. Dictumst blandit amet nunc feugiat gravida 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
+            pulvinar suspendisse nunc a. Dictumst blandit amet nunc feugiat
+            gravida
           </p>
           <nuxt-link class="btn btn-explore" to="/work-with-us">
             Let’s Go
@@ -155,9 +161,14 @@
           </nuxt-link>
         </div>
         <div class="work-content-right">
-           <lottie-player class="img" 
-           src="https://assets7.lottiefiles.com/private_files/lf30_bxgf8h5h.json" 
-          background="transparent" speed="1" loop autoplay></lottie-player>
+          <lottie-player
+            class="img"
+            src="https://assets7.lottiefiles.com/private_files/lf30_bxgf8h5h.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
         </div>
       </div>
     </section>
@@ -280,7 +291,7 @@ export default {};
   z-index: 2;
   @media only screen and (max-width: 1080px) {
     width: 96%;
-    left:2%
+    left: 2%;
   }
 }
 .bg-b {
@@ -305,8 +316,12 @@ export default {};
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  background:white;
-  background: linear-gradient(104.93deg, #FFFFFF 3.26%, rgba(255, 255, 255, 0) 92.12%);
+  background: white;
+  background: linear-gradient(
+    104.93deg,
+    #ffffff 3.26%,
+    rgba(255, 255, 255, 0) 92.12%
+  );
   backdrop-filter: blur(28px);
   border-radius: 75px 0px 75px 75px;
   z-index: 100;
@@ -368,7 +383,7 @@ export default {};
       width: 100%;
       @media only screen and (max-width: 1080px) {
         width: 50%;
-        margin-bottom:50px
+        margin-bottom: 50px;
       }
       span {
         font-family: "Poppins";
@@ -464,7 +479,8 @@ export default {};
       padding: 10px;
     }
   }
-  .mission-img img, .mission-img .img {
+  .mission-img img,
+  .mission-img .img {
     max-width: 100%;
     margin-left: -100px;
     @media only screen and (max-width: 1080px) {
@@ -523,9 +539,9 @@ export default {};
   margin-left: 10%;
   margin-bottom: 100px;
   margin-top: 150px;
-  padding:50px;
+  padding: 50px;
   @media only screen and (max-width: 1080px) {
-    padding:0;
+    padding: 0;
   }
 
   .work-title {
@@ -549,9 +565,9 @@ export default {};
   .work-content {
     display: flex;
     margin-top: 50px;
-     @media only screen and (max-width: 1080px) {
-       flex-wrap: wrap;
-      }
+    @media only screen and (max-width: 1080px) {
+      flex-wrap: wrap;
+    }
 
     .work-content-left {
       width: 55%;
@@ -562,13 +578,13 @@ export default {};
       line-height: 32px;
       letter-spacing: 0.75px;
       color: #000000;
-      .work-text-lg{
+      .work-text-lg {
         display: block;
         @media only screen and (max-width: 1080px) {
           display: none;
         }
       }
-      .work-text-md{
+      .work-text-md {
         display: none;
         @media only screen and (max-width: 1080px) {
           display: block;
@@ -588,7 +604,8 @@ export default {};
     .work-content-right {
       padding: 34px 0;
     }
-    .work-content-right img, .work-content-right .img {
+    .work-content-right img,
+    .work-content-right .img {
       max-width: 100%;
     }
   }
@@ -681,6 +698,4 @@ export default {};
     left: -100px;
   }
 }
-
-
 </style>

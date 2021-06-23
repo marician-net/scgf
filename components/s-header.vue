@@ -20,7 +20,7 @@
                 </svg>
 
             </li>
-            <li v-scroll-to="{
+            <li class="mt-md-50" v-scroll-to="{
                     el: '#secret-boxes',
                     container: 'body',
                     duration: 500,
@@ -146,11 +146,18 @@ header{
         display: flex;
         cursor: pointer;
         @media only screen and (max-width:1080px){
-            display: none
+            display: none;
+            .mt-md-50{
+                margin-top: 50px;
+            }
         }
     }
     ul li{
         padding: 52px;
+        @media only screen and (max-width:1080px){
+         padding: 42px 52px;
+        
+        }
     }
     ul li h6:hover{
         background: linear-gradient(180deg, #A769EC 0%, #F28B9D 100%);
