@@ -54,6 +54,7 @@
       .c-name {
         width: 100%;
         padding: 16px 38px;
+        color: #222222;
         @media only screen and (max-width: 500px) {
           padding: 8px 0;
           font-size: 20px;
@@ -107,6 +108,8 @@
         margin-top: 24px;
         text-align: center;
         width: 100%;
+        color: #222222;
+
         @media only screen and (max-width: 500px) {
           font-family: "Segoe UI";
           font-style: normal;
@@ -137,8 +140,8 @@
   }
   .il_cr_2 {
     position: absolute;
-    top: 20%;
-    right: 2%;
+    top: 25%;
+    right: 5%;
   }
   .il_cr_3 {
     position: absolute;

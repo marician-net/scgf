@@ -29,9 +29,6 @@
                     offset: -200,
                     force: true,
                     cancelable: true,
-                    onStart: onStart,
-                    onDone: onDone,
-                    onCancel: onCancel,
                     x: false,
                     y: true
                 }">
@@ -51,9 +48,6 @@
                     offset: -200,
                     force: true,
                     cancelable: true,
-                    onStart: onStart,
-                    onDone: onDone,
-                    onCancel: onCancel,
                     x: false,
                     y: true
                 }">
@@ -68,9 +62,6 @@
                     offset: -200,
                     force: true,
                     cancelable: true,
-                    onStart: onStart,
-                    onDone: onDone,
-                    onCancel: onCancel,
                     x: false,
                     y: true
                 }">
@@ -85,9 +76,6 @@
                     offset: -200,
                     force: true,
                     cancelable: true,
-                    onStart: onStart,
-                    onDone: onDone,
-                    onCancel: onCancel,
                     x: false,
                     y: true
                 }">
@@ -129,15 +117,15 @@
 
 <style lang="scss">
 header{
-    height: 229px;
+    height: 140px;
     width: 100%;
-    padding: 0 10%;
+    padding: 0 15%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     @media only screen and (max-width:1080px){
-            height: 120px;
+    height: 120px;
     padding: 0%;
     }
     ul{
@@ -153,10 +141,9 @@ header{
         }
     }
     ul li{
-        padding: 52px;
+        padding: 25px;
         @media only screen and (max-width:1080px){
-         padding: 42px 52px;
-        
+         padding: 0 25px;
         }
     }
     ul li h6:hover{
