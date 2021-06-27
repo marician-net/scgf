@@ -204,7 +204,7 @@ export default {
   background-size: cover;
   background-position: center;
   padding-top: 214px;
-  @media only screen and (max-width: 1080px) {
+  @media only screen and (max-width: 768px) {
     background-image: url("/bg-page-2-md.png");
     padding: 0;
     padding-top: 125px;
@@ -219,7 +219,7 @@ export default {
     backdrop-filter: blur(28px);
     border-radius: 40px 0px 0 0;
     padding: 68px;
-    @media only screen and (max-width: 1080px) {
+    @media only screen and (max-width: 768px) {
         padding: 30px;
     }
     .page-title {
@@ -235,7 +235,7 @@ export default {
       color: #000000;
       margin-bottom: 28px;
 
-      @media only screen and (max-width: 1080px) {
+      @media only screen and (max-width: 768px) {
         font-size: 29.7259px;
         line-height: 31px;
       }
@@ -252,12 +252,12 @@ export default {
       letter-spacing: 0.5px;
       color: #1e2022;
       max-width: 676px;
-      @media only screen and (max-width: 1080px) {
+      @media only screen and (max-width: 768px) {
         color: #4E4B66;
       }
      
     }
-     @media only screen and (max-width: 1080px) {
+     @media only screen and (max-width: 768px) {
         .page-desc-2 {
           margin-top:40px
         }
@@ -266,7 +266,7 @@ export default {
       width: 100%;
       padding: 50px;
       list-style: none;
-      @media only screen and (max-width: 1080px) {
+      @media only screen and (max-width: 768px) {
           padding: 0;
       }
       li {
@@ -279,11 +279,11 @@ export default {
           display: flex;
           justify-content: center;
           align-items: center;
-          @media only screen and (max-width: 1080px) {
+          @media only screen and (max-width: 768px) {
             flex-wrap: wrap;
           }
           .list-img {
-              @media only screen and (max-width: 1080px) {
+              @media only screen and (max-width: 768px) {
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
@@ -295,7 +295,7 @@ export default {
             .box {
               width: 137px;
               margin-right: 52px;
-              @media only screen and (max-width: 1080px) {
+              @media only screen and (max-width: 768px) {
                 margin-top:30px;
                 width: 121px;
                 margin-right: 0
