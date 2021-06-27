@@ -7,7 +7,9 @@
       </h3>
       <ul class="list-explore">
         <li>
-          <h6>Secret Boxes</h6>
+          <h6>
+            <span>Secret Boxes</span>
+          </h6>
           <p class="body-1">
             Quickstarts to help you build decentralized, privacy preserving
             dApps on the Secret Network. Each box comes with everything you need
@@ -36,7 +38,10 @@
           </a>
         </li>
          <li>
-          <h6>Secret NFTs</h6>
+          <h6>
+             <span >Secret NFTs
+             </span>
+             </h6>
           <p class="body-1">
             Quickstarts to help you build decentralized, privacy preserving dApps on the Secret Network. Each box comes with everything you need to start building and includes libraries, secret contracts and beautiful UI elements so you can focus on coding your functionality. Secret Boxes can be anything from use case blueprints to chain integrations, technical bootstraps and more.
           </p>
@@ -60,7 +65,10 @@
           </a>
         </li>
         <li>
-          <h6>Lorem Ipsum DAO</h6>
+          <h6>
+             <span >Lorem Ipsum DAO
+             </span>
+             </h6>
           <p class="body-1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing id aliquam non placerat et. A arcu morbi gravida a viverra condimentum.
           </p>
@@ -125,7 +133,10 @@ export default {
         margin-top: 100px;
         margin-bottom: 100px;
       }
-      h6{
+      h6 span{
+        font-size: 20px;
+      }
+      h6 span{
         @media only screen and (max-width: 768px) {
             width: auto;
             font-family: 'Poppins';

@@ -102,10 +102,7 @@
                 <span class="text-gradient">Figment Learn</span>
               </h5>
               <p class="subtitle-2">
-                This is the starting point for learning about Secret Contracts.
-                Based on the “simple counter” secret contract this box
-                illustrates the basics of querying and modifying contract state
-                using the “getCount” and “increment” messages.
+                Figment Learn is a fun learning pathway to help developers quickly learn about working with the Secret Network. Using the DataHub gateway you’ll be taken through the steps to deploy a secret contract to the testnet, and even get some SCRT tokens for your efforts!
               </p>
               <div class="list-action">
                 <a href="#" class="btn-act-pink">
@@ -165,10 +162,7 @@
                 <span class="text-gradient">Richie Rich</span>
               </h5>
               <p class="subtitle-2">
-                This is the starting point for learning about Secret Contracts.
-                Based on the “simple counter” secret contract this box
-                illustrates the basics of querying and modifying contract state
-                using the “getCount” and “increment” messages.
+              How do you find out who’s the richest without revealing your net worth to the world? This secret box, based on Yao’s Millionaires’ Problem, illustrates how that can be done with secret contracts.
               </p>
               <div class="list-action">
                 <a href="#" class="btn-act-pink disable">
@@ -370,12 +364,12 @@ export default {
                 border-radius: 32px;
                 color: #f7b5d2;
                 background: #fff;
-                background: linear-gradient(180deg, #a769ec 0%, #f28b9d 100%);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
+                border-radius: 32px;
+                margin-left: 10px;
                 svg {
                   margin-left: 15px;
                 }
+                
               }
             }
           }
@@ -392,7 +386,11 @@ export default {
     svg{
       margin-left: 10px;
     }
-    margin-bottom: 170px;
+    @media only screen and (max-width: 768px) {
+
+    margin-top: 88px;
+    }
+    margin-bottom: 88px;
   }
 }
 </style>
