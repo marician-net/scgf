@@ -124,7 +124,7 @@ header{
     justify-content: center;
     align-items: center;
     position: absolute;
-    @media only screen and (max-width:1080px){
+    @media only screen and (max-width:768px){
     height: 120px;
     padding: 0%;
     }
@@ -133,7 +133,7 @@ header{
         list-style: none;
         display: flex;
         cursor: pointer;
-        @media only screen and (max-width:1080px){
+        @media only screen and (max-width:768px){
             display: none;
             .mt-md-50{
                 margin-top: 50px;
@@ -142,7 +142,7 @@ header{
     }
     ul li{
         padding: 25px;
-        @media only screen and (max-width:1080px){
+        @media only screen and (max-width:768px){
          padding: 0 25px;
         }
     }
@@ -153,7 +153,7 @@ header{
     }
     .logo{
         width: 52px;
-        @media only screen and (max-width:1080px){
+        @media only screen and (max-width:768px){
             margin-left:19px;
             width: 48px;
         }
@@ -163,7 +163,7 @@ header{
         display: none;
         margin-left: auto;
         margin-right: 35px;
-        @media only screen and (max-width:1080px){
+        @media only screen and (max-width:768px){
             display: inline-block
         }
     }
@@ -171,7 +171,7 @@ header{
 .mobile-only{
     display: none;
 }
-@media only screen and (max-width:1080px){
+@media only screen and (max-width:768px){
     .mobile-only{
         display: block;
     }

@@ -75,7 +75,7 @@
         font-size: 14px;
         line-height: 19px;
         margin-top: 15px;
-        
+        opacity: .8;
       }
     }
   
@@ -98,14 +98,26 @@
     }
   }
   
-  .bg-il-1 {
+  .bg-il-1,.bg-il-1-md {
     position: absolute;
     width: 80%;
     height: auto;
     left: 10%;
     top: 288px;
     z-index: 2;
-    @media only screen and (max-width: 768px) {
+  }
+  .bg-il-1-md{
+    display: none;
+  }
+  .bg-il-1{
+    display: block
+  }
+  @media only screen and (max-width: 768px) {
+    .bg-il-1{
+      display: none;
+    }
+    .bg-il-1-md{
+      display: block;
       width: 96%;
       left:2%
     }
@@ -146,7 +158,7 @@
       width: 100%;
       margin-left: 0%;
       padding: 20px;
-      margin-top: 88px;
+      margin-top: -50px;
       .btn-exlpore-mobile{
         display: flex;
         text-align: center;
@@ -154,11 +166,7 @@
         margin-top: -50px;
         margin-bottom: 50px;
         font-size: 16px;
-        
       }
-    }
-    @media only screen and (max-width: 500px) {
-      margin-top: -20px;
     }
     .secret-box-title {
       font-family: "Poppins";
@@ -171,13 +179,15 @@
       width: 35%;
       @media only screen and (max-width: 768px) {
         width: 100%;
+        font-size: 40px;
       }
     }
     .secret-box-subtitle svg{
       position:absolute;
       top:10px;
       @media only screen and (max-width: 768px) {
-        top:-10px
+        top:-10px;
+        left: 30px;
       }
     }
     .secret-box-desc {
@@ -290,6 +300,7 @@
       @media only screen and (max-width: 768px) {
         width: 100%;
         padding: 10px;
+        font-size: 40px;
       }
     }
     .mission-subtitle {
@@ -301,10 +312,17 @@
       line-height: 32px;
       letter-spacing: 0.75px;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       color: #8440ff;
       svg {
         margin-right: 10px;
+      }
+      @media only screen and (max-width: 768px) {
+        span{
+          width: 100%;
+          padding: 20px 0;
+        }
       }
     }
     .mission-desc {
@@ -319,6 +337,8 @@
       @media only screen and (max-width: 768px) {
         width: 100%;
         padding: 10px;
+        color: #4E4B66;
+        opacity: .8;
       }
     }
     .mission-img img {
@@ -361,6 +381,7 @@
         text-align: left;
         width: 100%;
         padding: 5%;
+        font-size: 40px;
       }
   
       .contributor-subtitle {
@@ -402,6 +423,11 @@
         position: absolute;
         margin-top: -60px;
       }
+      @media only screen and (max-width: 768px) {
+          font-size: 40px;
+          display: block;
+          text-align: center;
+        }
     }
   
     .work-content {
@@ -433,6 +459,8 @@
         }
         @media only screen and (max-width: 768px) {
           width: 100%;
+          opacity: .8;
+          color: #4E4B66;
         }
         .btn {
           @media only screen and (max-width: 768px) {
@@ -444,9 +472,13 @@
       }
       .work-content-right {
         padding: 34px 0;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
       }
       .work-content-right img {
         max-width: 100%;
+        
       }
     }
   }

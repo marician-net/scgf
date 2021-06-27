@@ -65,8 +65,11 @@
     }
     h6 {
       margin-left: 16px;
+      @media only screen and (max-width: 768px) {
+        font-size: 15px;
+      }
     }
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 768px) {
       display: block;
       width: 100%;
       .footer-logo-flex{
@@ -75,10 +78,11 @@
          margin-bottom: 27px;
          display: flex;
          align-items: center;
+         justify-content: center;
       }
     }
   }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 768px) {
     height: auto;
     padding: 43px 67px;
 
@@ -89,19 +93,19 @@
   display: flex;
   .f-menu-community{
     padding-right: 140px;
-     @media only screen and (max-width: 800px) {
+     @media only screen and (max-width: 768px) {
       padding-right: 0;
       width: 100%;
     }
   }
   .f-menu-leanguage {
     padding-right: 50px;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 768px) {
       padding-right: 0;
       width: 100%;
     }
   }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 768px) {
     float: left;
     flex-wrap: wrap;
     width: 100%;
@@ -116,11 +120,11 @@
   padding: 17px;
     opacity: 0.8;
 
-  @media only screen and (max-width: 800px) {
-  right: 0;
-  width: 100%;
-  text-align: center;
-  padding:  27px;
+  @media only screen and (max-width: 768px) {
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding:  27px;
   }
 }
 .footer ul {

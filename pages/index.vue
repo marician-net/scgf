@@ -12,6 +12,7 @@
         <s-nav-icon />
       </nuxt-link>
       <img class="bg-il-1" src="/il-1.png" alt="Il 1" />
+      <img class="bg-il-1-md" src="/il-1-md.png" alt="Il 1 Md" />
       <div class="bg-b"></div>
     </section>
     <section class="secret-boxes" id="secret-boxes">
@@ -72,7 +73,7 @@
           >
             <rect width="32" height="3" fill="#803DFF" />
           </svg>
-          About Us
+          <span>About Us</span>
         </div>
         Mission
       </div>
@@ -137,7 +138,7 @@
           </nuxt-link>
         </div>
         <div class="work-content-right">
-          <img src="/work.png" alt="Work with Us" />
+          <img width="100%" src="/work.png" alt="Work with Us" />
         </div>
       </div>
     </section>

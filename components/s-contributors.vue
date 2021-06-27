@@ -88,7 +88,6 @@
       }
       .c-icon {
         margin-bottom: 10%;
-
         padding: 8px;
         color: #4e4b66;
         border: 1px solid #4e4b66;
@@ -98,7 +97,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
+        @media only screen and (max-width: 768px) {
+          margin: 10px;
+        }
         svg {
           width: 14px;
           height: 14px;
@@ -110,7 +111,7 @@
         width: 100%;
         color: #222222;
 
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 768px) {
           font-family: "Segoe UI";
           font-style: normal;
           font-weight: 600;
@@ -156,22 +157,26 @@
   @media only screen and (max-width: 1080px) {
     .il_cr_1 {
       width: 20%;
-      left: -2%;
-      top: 5%;
+      left: 5%;
+      top: 7%;
+      transform: rotate(20deg);
     }
     .il_cr_2 {
       width: 20%;
       right: -2%;
-      top: 25%;
-    }
-    .il_cr_3 {
-      width: 20%;
-      left: -2%;
-      bottom: 20%;
+      top: 28%;
     }
     .il_cr_4 {
       width: 20%;
-      right: -2%;
+      left: -2%;
+      bottom: 20%;
+      transform: rotate(-20deg);
+
+    }
+      .il_cr_3 {
+      width: 15%;
+      left: auto;
+      right: 2%;
       bottom: -5%;
     }
   }
