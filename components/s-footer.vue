@@ -24,16 +24,22 @@
       <div class="f-menu-leanguage">
         <strong class="subtitle">Language</strong>
         <ul class="body-2">
-          <li>English</li>
-          <li>Chinese</li>
-          <li>Spanish</li>
+          <li>
+            <a href="#">English</a>
+          </li>
+          <li>
+            <a href="#">Chinese</a>
+          </li>
+          <li>
+            <a href="#">Spanish</a>
+          </li>
         </ul>
       </div>
     </div>
 
     <div class="footer-logo">
       <div class="footer-logo-flex">
-        <img width="72px" height="72px" src="/logo.png" alt="Logo SCGF" />
+        <img  src="/logo.png" alt="Logo SCGF" />
         <h6>
           SecretChainGirl <br />
           Foundation
@@ -51,6 +57,7 @@
 .footer {
   background: linear-gradient(96deg, #a769ec 31.04%, #f28b9d 90.69%);
   border-radius: 33px 33px 0px 0px;
+  margin-top: -33px;
   padding: 80px 140px;
   height: 361px;
   position: relative;
@@ -62,6 +69,10 @@
     .footer-logo-flex{
       display: flex;
       align-items: center;
+      img{
+        width: 72px;
+        height:72px
+      }
     }
     h6 {
       margin-left: 16px;
@@ -79,6 +90,10 @@
          display: flex;
          align-items: center;
          justify-content: center;
+        img{
+          width: 44px;
+          height: 44px
+        }
       }
     }
   }

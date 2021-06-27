@@ -31,6 +31,8 @@
   background-image: url("/bg-page-1.png");
   background-size: cover;
   @media only screen and (max-width: 768px) {
+    background-image: url("/filter.jpg");
+   background-size: cover;
     height: 600px;
     padding-top: 125px;
     padding-bottom: 125px;
