@@ -55,7 +55,7 @@
         width: 100%;
         padding: 16px 38px;
         color: #222222;
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 768px) {
           padding: 8px 0;
           font-size: 20px;
         }
@@ -63,7 +63,7 @@
       .c-title {
         width: 100%;
         padding: 16px 38px;
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 768px) {
           padding: 8px 0;
           font-size: 16px;
         }
@@ -83,8 +83,8 @@
       justify-content: space-between;
       align-items: center;
       padding: 10%;
-      @media only screen and (max-width: 500px) {
-        top: 5%;
+      @media only screen and (max-width: 768px) {
+        top: 0%;
       }
       .c-icon {
         margin-bottom: 10%;
@@ -99,6 +99,9 @@
         justify-content: center;
         @media only screen and (max-width: 768px) {
           margin: 10px;
+        }
+        @media only screen and (max-width: 400px) {
+          margin: 10px 0;
         }
         svg {
           width: 14px;
@@ -152,7 +155,7 @@
   .il_cr_4 {
     position: absolute;
     bottom: 5%;
-    right: 5%;
+    right: 2%;
   }
   @media only screen and (max-width: 1080px) {
     .il_cr_1 {

@@ -12,6 +12,8 @@
         <s-nav-icon />
       </nuxt-link>
       <img class="bg-il-1" src="/il-1.png" alt="Il 1" />
+      <img class="bg-il-1-md" src="/il-1-md.png" alt="Il 1 Md" />
+
 
       <div class="bg-b"></div>
     </section>
@@ -74,6 +76,10 @@
           <span>Richie Rich</span>
         </div>
       </div>
+      <nuxt-link class="btn btn-explore btn-exlpore-mobile" to="/secret-boxes">
+          Explore more
+      <s-nav-icon />
+      </nuxt-link>
     </section>
     <section class="mission" id="about">
       <div class="mission-title">
@@ -87,7 +93,7 @@
           >
             <rect width="32" height="3" fill="#803DFF" />
           </svg>
-          About Us
+          <span>About Us</span>
         </div>
         Mission
       </div>
@@ -177,6 +183,7 @@
     <div class="bg-gradient-2"></div>
     <div class="bg-gradient-3"></div>
     <div class="bg-gradient-4"></div>
+    <div class="bg-gradient-5"></div>
     
   </div>
 </template>

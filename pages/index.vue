@@ -148,6 +148,7 @@
     <div class="bg-gradient-2"></div>
     <div class="bg-gradient-3"></div>
     <div class="bg-gradient-4"></div>
+    <div class="bg-gradient-5"></div>
   </div>
 </template>
 
