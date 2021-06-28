@@ -126,6 +126,9 @@ export default {
     padding: 68px;
     @media only screen and (max-width: 768px) {
       padding: 30px;
+      background: linear-gradient(89.05deg, #FFFFFF 45.73%, rgba(255, 255, 255, 0) 105.23%);
+      backdrop-filter: blur(28px);
+      border-radius: 75px 0px 75px 75px;
     }
     .list-explore {
       list-style: none;

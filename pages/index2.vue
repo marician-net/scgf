@@ -168,7 +168,7 @@
         </div>
         <div class="work-content-right">
           <lottie-player
-            class="img"
+            class="lottie"
             src="https://assets7.lottiefiles.com/private_files/lf30_bxgf8h5h.json"
             background="transparent"
             speed="1"

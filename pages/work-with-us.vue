@@ -143,6 +143,11 @@ export default {
     @media only screen and (max-width: 768px) {
       padding: 30px;
       padding-bottom: 100px;
+      background: linear-gradient(105.84deg, #FFFFFF 3.27%, rgba(255, 255, 255, 0.44) 129.31%);
+      backdrop-filter: blur(34px);
+      /* Note: backdrop-filter has minimal browser support */
+
+      border-radius: 75px 0px 75px 75px;
     }
 
     .form-title{
@@ -154,7 +159,6 @@ export default {
         display: flex;
         align-items: center;
         letter-spacing: 0.25px;
-        color: #4E4B66;
 
       @media only screen and (max-width: 768px) {
         font-family: Segoe UI;
@@ -167,9 +171,6 @@ export default {
         display: flex;
         align-items: center;
 
-        /* Grayscale / Body */
-
-        color: #4E4B66;
       }
     }
 
@@ -207,6 +208,8 @@ export default {
         padding: 12px 0;
       }
       .input-group{
+
+        color: #4E4B66;
         width: 100%;
         display: flex;
         background: #EFF0F7;
@@ -226,6 +229,8 @@ export default {
         }
       }
       textarea{
+
+        color: #4E4B66;
         width: 100%;
         display: flex;
         background: #EFF0F7;
