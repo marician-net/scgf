@@ -6,7 +6,8 @@
       :key="i.id"
     >
       <div class="container-item">
-        <img class="bg-user" :src="`/user/${i.img}`" :alt="`User ${i.id}`" />
+        <img class="bg-user-lg" :src="`/user/${i.img}`" :alt="`User ${i.id}`" />
+        <img class="bg-user-md" :src="`/user/md/${i.img}`" :alt="`User ${i.id}`" />
         <h6 class="c-name">{{ i.name }}</h6>
         <small class="body-1 c-title">{{ i.title }}</small>
 
@@ -48,9 +49,22 @@
       justify-content: center;
       text-align: center;
       flex-wrap: wrap;
-      .bg-user {
+      .bg-user-lg {
+        display: block;
         width: 100%;
       }
+      .bg-user-md {
+        display: none;
+        width: 100%;
+      }
+        @media only screen and (max-width: 1080px) {
+           .bg-user-lg {
+            display: none;
+          }
+          .bg-user-md {
+            display: block;
+          }
+        }
       .c-name {
         width: 100%;
         padding: 16px 38px;

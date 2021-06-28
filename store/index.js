@@ -3,7 +3,7 @@ export const state = () => ({
     contributors: [
       {
         id: 1,
-        img: "1.png",
+        img: "1.jpg",
         name: "Laura Weindorf",
         title: "Founder",
         address: "Michigan, USA",
@@ -16,7 +16,7 @@ export const state = () => ({
       },
       {
         id: 2,
-        img: "2.png",
+        img: "2.jpg",
         name: "Kate",
         title: "Designer",
         address: "St. Petersburg, Russia",
@@ -29,7 +29,7 @@ export const state = () => ({
       },
       {
         id: 3,
-        img: "3.png",
+        img: "3.jpg",
         name: "Julia",
         title: "Girl Friday",
         address: "Virginia, USA",
@@ -42,7 +42,7 @@ export const state = () => ({
       },
       {
         id: 4,
-        img: "4.png",
+        img: "4.jpg",
         name: "Abhishek",
         title: "Blockchain Wizard",
         address: "Chandigarh, India",
@@ -55,7 +55,7 @@ export const state = () => ({
       },
       {
         id: 5,
-        img: "5.png",
+        img: "5.jpg",
         name: "Jeff Puttstrife",
         title: "UX/UI Bro",
         address: "Bangkok, Thailand",
@@ -68,7 +68,7 @@ export const state = () => ({
       },
       {
         id: 6,
-        img: "6.png",
+        img: "6.jpg",
         name: "Yamate",
         title: "Front End Shinobi",
         address: "Tokyo, Japan",
@@ -81,7 +81,7 @@ export const state = () => ({
       },
       {
         id: 7,
-        img: "7.png",
+        img: "7.jpg",
         name: "Zachariah Farhang",
         title: "Front End Rockstar",
         address: "Herat, Afghanistan",
@@ -94,7 +94,7 @@ export const state = () => ({
       },
       {
         id: 8,
-        img: "8.png",
+        img: "8.jpg",
         name: "Lourenco",
         title: "Front End Chad",
         address: "Lisbon, Portugal",
