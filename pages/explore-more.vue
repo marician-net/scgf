@@ -19,7 +19,7 @@
             integrations, technical bootstraps and more.
           </p>
           <a href="#">
-            Visit Secret Boxes
+            Visit Secret Boxes Website
 
             <svg
               width="24"
@@ -46,7 +46,7 @@
             Quickstarts to help you build decentralized, privacy preserving dApps on the Secret Network. Each box comes with everything you need to start building and includes libraries, secret contracts and beautiful UI elements so you can focus on coding your functionality. Secret Boxes can be anything from use case blueprints to chain integrations, technical bootstraps and more.
           </p>
           <a href="#">
-            Learn More Secret NFTs
+           Learn More Secret NFTs
 
             <svg
               width="24"
