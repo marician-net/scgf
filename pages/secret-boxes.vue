@@ -10,7 +10,11 @@
         Quickstarts to help you build decentralized, privacy preserving dApps on
         the Secret Network. Each box comes with everything you need to start
         building and includes libraries, secret contracts and beautiful UI
-        elements so you can focus on coding your functionality. Secret Boxes can
+        elements so you can focus on coding your functionality. 
+
+      </p>
+      <p class="page-desc page-desc-2">
+        Secret Boxes can
         be anything from use case blueprints to chain integrations, technical
         bootstraps and more.
       </p>
@@ -18,6 +22,9 @@
         <li>
           <div class="box-list-item">
             <div class="list-img">
+               <h5 class="title-md">
+                <span class="text-gradient">Secret Counter</span>
+              </h5>
               <lottie-player
                 src="https://assets5.lottiefiles.com/private_files/lf30_sqamzndl.json"
                 background="transparent"
@@ -28,7 +35,7 @@
               ></lottie-player>
             </div>
             <div class="list-content">
-              <h5>
+              <h5 class="title-lg">
                 <span class="text-gradient">Secret Counter</span>
               </h5>
               <p class="subtitle-2">
@@ -78,6 +85,9 @@
         <li>
           <div class="box-list-item">
             <div class="list-img">
+               <h5 class="title-md">
+                <span class="text-gradient">Figment Learn</span>
+              </h5>
               <lottie-player
                 src="https://assets2.lottiefiles.com/private_files/lf30_0vbtxqrd.json"
                 background="transparent"
@@ -88,14 +98,11 @@
               ></lottie-player>
             </div>
             <div class="list-content">
-              <h5>
-                <span class="text-gradient">Secret Counter</span>
+              <h5 class="title-lg">
+                <span class="text-gradient">Figment Learn</span>
               </h5>
               <p class="subtitle-2">
-                This is the starting point for learning about Secret Contracts.
-                Based on the “simple counter” secret contract this box
-                illustrates the basics of querying and modifying contract state
-                using the “getCount” and “increment” messages.
+                Figment Learn is a fun learning pathway to help developers quickly learn about working with the Secret Network. Using the DataHub gateway you’ll be taken through the steps to deploy a secret contract to the testnet, and even get some SCRT tokens for your efforts!
               </p>
               <div class="list-action">
                 <a href="#" class="btn-act-pink">
@@ -138,6 +145,9 @@
         <li>
           <div class="box-list-item">
             <div class="list-img">
+               <h5 class="title-md">
+                <span class="text-gradient">Richie Rich</span>
+              </h5>
               <lottie-player
                 src="https://assets10.lottiefiles.com/private_files/lf30_woabmjiz.json"
                 background="transparent"
@@ -148,17 +158,14 @@
               ></lottie-player>
             </div>
             <div class="list-content">
-              <h5>
-                <span class="text-gradient">Secret Counter</span>
+              <h5 class="title-lg">
+                <span class="text-gradient">Richie Rich</span>
               </h5>
               <p class="subtitle-2">
-                This is the starting point for learning about Secret Contracts.
-                Based on the “simple counter” secret contract this box
-                illustrates the basics of querying and modifying contract state
-                using the “getCount” and “increment” messages.
+              How do you find out who’s the richest without revealing your net worth to the world? This secret box, based on Yao’s Millionaires’ Problem, illustrates how that can be done with secret contracts.
               </p>
               <div class="list-action">
-                <a href="#" class="btn-act-pink">
+                <a href="#" class="btn-act-pink disable">
                   <span class="text-gradient">Coming Soon</span>
                 </a>
               </div>
@@ -166,6 +173,14 @@
           </div>
         </li>
       </ul>
+      <a href="#" class="btn-link-website">
+        Visit Secret Box Website
+
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.59426 11.203C3.20414 11.2525 2.90205 11.5906 2.90205 11.9998C2.90205 12.4432 3.25657 12.8031 3.69351 12.8031L17.6059 12.8031L12.5797 17.8826L12.5086 17.9646C12.2717 18.2787 12.2952 18.7303 12.5776 19.0189C12.8858 19.3327 13.3871 19.3337 13.6962 19.021L20.0805 12.5685L20.1509 12.4877C20.258 12.3464 20.3137 12.1738 20.3137 11.9998C20.3137 11.8959 20.2937 11.792 20.2536 11.6936C20.1312 11.3926 19.8431 11.1967 19.5223 11.1967L3.69351 11.1967L3.59426 11.203ZM12.5775 4.98118C12.2694 5.29605 12.2694 5.80475 12.5796 6.11749L16.101 9.67624L16.1823 9.74811C16.4933 9.98762 16.9372 9.96266 17.2196 9.67411C17.3737 9.51663 17.4507 9.31214 17.4507 9.10756C17.4507 8.90084 17.3737 8.69519 17.2175 8.53781L13.6972 4.97906L13.6159 4.90738C13.3047 4.66864 12.86 4.6935 12.5775 4.98118Z" fill="#6900F4"/>
+</svg>
+
+      </a>
     </div>
   </div>
 </template>
@@ -177,14 +192,14 @@ export default {
 
 <style lang="scss" scoped>
 .page-section {
-  padding-top: 230px;
   width: 100%;
   padding: 0 16%;
-  background-image: url("/bg-page-1.png");
+  background-image: url("/bg-page-2.png");
   background-size: cover;
-    padding-top: 250px;
-
-  @media only screen and (max-width: 1080px) {
+  background-position: center;
+  padding-top: 214px;
+  @media only screen and (max-width: 768px) {
+    background-image: url("/bg-page-2-md.png");
     padding: 0;
     padding-top: 125px;
   }
@@ -198,8 +213,11 @@ export default {
     backdrop-filter: blur(28px);
     border-radius: 40px 0px 0 0;
     padding: 68px;
-    @media only screen and (max-width: 1080px) {
+    @media only screen and (max-width: 768px) {
         padding: 30px;
+        background: linear-gradient(89.05deg, #FFFFFF 45.73%, rgba(255, 255, 255, 0) 105.23%);
+        backdrop-filter: blur(28px);
+        border-radius: 75px 0px 75px 75px;
     }
     .page-title {
       font-family: "Poppins";
@@ -214,7 +232,7 @@ export default {
       color: #000000;
       margin-bottom: 28px;
 
-      @media only screen and (max-width: 1080px) {
+      @media only screen and (max-width: 768px) {
         font-size: 29.7259px;
         line-height: 31px;
       }
@@ -223,7 +241,7 @@ export default {
       font-family: "Source Sans Pro";
       font-style: normal;
       font-weight: normal;
-      font-size: 16px;
+      font-size: 18px;
       line-height: 24px;
       display: flex;
       align-items: center;
@@ -231,42 +249,80 @@ export default {
       letter-spacing: 0.5px;
       color: #1e2022;
       max-width: 676px;
+      @media only screen and (max-width: 768px) {
+        color: #4E4B66;
+      }
+     
     }
+     @media only screen and (max-width: 768px) {
+        .page-desc-2 {
+          margin-top:40px
+        }
+      }
     .box-list {
       width: 100%;
       padding: 50px;
       list-style: none;
-      @media only screen and (max-width: 1080px) {
+      @media only screen and (max-width: 768px) {
           padding: 0;
       }
       li {
         width: 100%;
         margin-bottom:50px;
+          @media only screen and (max-width: 768px) {
+            margin-bottom:0px;
+          }
         .box-list-item {
           display: flex;
           justify-content: center;
           align-items: center;
-          @media only screen and (max-width: 1080px) {
+          @media only screen and (max-width: 768px) {
             flex-wrap: wrap;
           }
           .list-img {
+              @media only screen and (max-width: 768px) {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                h5{
+                  width: 100%;
+                  text-align: center;
+                }
+              }
             .box {
               width: 137px;
               margin-right: 52px;
-              @media only screen and (max-width: 1080px) {
-                margin-top:30px
+              @media only screen and (max-width: 768px) {
+                margin-top:30px;
+                width: 121px;
+                margin-right: 0
               }
             }
           }
+           .title-md{
+              display: none;
+            }
+             .title-lg{
+               margin-bottom: 15px;
+             }
+            @media only screen and (max-width: 768px) {
+              .title-lg{
+                display: none;
+              }
+               .title-md{
+                display: block;
+                margin-top: 40px;
+              }
+            }
           .list-content {
             width: auto;
-
-            @media only screen and (max-width: 1080px) {
-              h5{
-                text-align: center;
-                width: 100%;
-                padding: 30px;
-              }
+            @media only screen and (max-width: 768px) {
+              margin-top:40px
+            }
+            .text-gradient{
+              background: linear-gradient(180deg, #A769EC 0%, #F28B9D 100%);
+               background-clip: text;
+              -webkit-text-fill-color: transparent;
             }
             .subtitle-2 {
               max-width: 399px;
@@ -274,6 +330,10 @@ export default {
             .list-action {
               padding: 15px 0;
               display: flex;
+            @media only screen and (max-width: 768px) {
+              margin-top: 40px;
+              justify-content: center;
+            }
               .btn-act-pink {
                 display: flex;
                 align-items: center;
@@ -286,8 +346,14 @@ export default {
                   display: none;
                 }
               }
+              .btn-act-pink.disable{
+                background: #FCE3EE;
+              }
               .btn-act-pink:hover {
                 background: #ff94c3;
+              }
+              .btn-act-pink.disable:hover{
+                background: #FCE3EE;
               }
               .btn-act-pink:hover svg {
                 display: block;
@@ -301,18 +367,33 @@ export default {
                 border-radius: 32px;
                 color: #f7b5d2;
                 background: #fff;
-                background: linear-gradient(180deg, #a769ec 0%, #f28b9d 100%);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
+                border-radius: 32px;
+                margin-left: 10px;
                 svg {
                   margin-left: 15px;
                 }
+                
               }
             }
           }
         }
       }
     }
+  }
+  .btn-link-website{
+    color: #6900F4;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+      margin-left: 10px;
+    }
+    @media only screen and (max-width: 768px) {
+
+    margin-top: 88px;
+    }
+    margin-bottom: 88px;
   }
 }
 </style>

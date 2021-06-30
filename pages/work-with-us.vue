@@ -11,7 +11,7 @@
       <form action="#" @submit.prevent="actionData()" class="form">
         <div class="form-left">
           <div class="form-group">
-          <label class="body-1" for="fullname">full name</label>
+          <label class="body-1" for="fullname">Full name</label>
           <div class="input-group">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="12" cy="12" r="11" stroke="#6E7191" stroke-width="2"/>
@@ -22,7 +22,7 @@
          </div>
         </div>
         <div class="form-group">
-          <label class="body-1" for="email">email</label>
+          <label class="body-1" for="email">Email</label>
           <div class="input-group">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#6E7191" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -41,6 +41,7 @@
           </div>
         </div>
         <div class="button-form-service">
+          <label for="service" class="label">Service</label>
           <div v-for="service in services" :key="service"
           @click="input.service = service"
           :class="(input.service == service) ? 'item-service active' : 'item-service'"
@@ -79,14 +80,14 @@ export default {
 
 <style lang="scss" scoped>
 .page-section {
-  padding-top: 230px;
   width: 100%;
   padding-left:5%;
-  background-image: url("/bg-page-1.png");
+  background-image: url("/bg-page-form.png");
   background-size: cover;
-  padding-top: 250px;
+  padding-top: 210px;
   padding-bottom: 250px;
-  @media only screen and (max-width: 1080px) {
+  @media only screen and (max-width: 768px) {
+    background-image: url("/bg-page-2-md.png");
     padding: 0;
     padding-top: 125px;
   }
@@ -102,7 +103,7 @@ export default {
     text-align: center;
     letter-spacing: 1px;
     justify-content: center;
-    @media only screen and (max-width: 1080px) {
+    @media only screen and (max-width: 768px) {
       font-size: 39.3846px;
       line-height: 48px;
     }
@@ -118,11 +119,13 @@ export default {
     text-align: center;
     letter-spacing: 0.25px;
     color: #4E4B66;
-    justify-content: center;
+        opacity: .8;
 
-    @media only screen and (max-width: 1080px) {
+    justify-content: center;
+    @media only screen and (max-width: 768px) {
       font-size: 18px;
       line-height: 24px;
+      margin-top: 15px;
     }
 
   }
@@ -137,12 +140,18 @@ export default {
     border-radius: 40px 0px 40px 40px;
     padding: 68px;
     margin-top: 69px;
-    @media only screen and (max-width: 1080px) {
+    @media only screen and (max-width: 768px) {
       padding: 30px;
+      padding-bottom: 100px;
+      background: linear-gradient(105.84deg, #FFFFFF 3.27%, rgba(255, 255, 255, 0.44) 129.31%);
+      backdrop-filter: blur(34px);
+      /* Note: backdrop-filter has minimal browser support */
+
+      border-radius: 75px 0px 75px 75px;
     }
 
     .form-title{
-      font-family: Segoe UI;
+        font-family: 'Segoe UI';
         font-style: normal;
         font-weight: normal;
         font-size: 34px;
@@ -151,11 +160,7 @@ export default {
         align-items: center;
         letter-spacing: 0.25px;
 
-        /* Grayscale / Body */
-
-        color: #4E4B66;
-
-      @media only screen and (max-width: 1080px) {
+      @media only screen and (max-width: 768px) {
         font-family: Segoe UI;
         font-style: normal;
         font-weight: normal;
@@ -166,9 +171,6 @@ export default {
         display: flex;
         align-items: center;
 
-        /* Grayscale / Body */
-
-        color: #4E4B66;
       }
     }
 
@@ -177,21 +179,20 @@ export default {
       flex-wrap: wrap;
       width: 100%;
       padding-right:20%;
-
-      @media only screen and (max-width: 1080px) {
-                padding-right:0%;
-
+      color: #A0A3BD;
+      @media only screen and (max-width: 768px) {
+          padding-right:0%;
       }
       .form-left{
         width: 45%;
-        @media only screen and (max-width: 1080px) {
+        @media only screen and (max-width: 768px) {
           width: 100%;
         }
       }
       .form-right{
         width: 55%;
         padding-left:50px;
-        @media only screen and (max-width: 1080px) {
+        @media only screen and (max-width: 768px) {
           width: 100%;
         padding-left:0;
         }
@@ -201,18 +202,21 @@ export default {
         flex-wrap: wrap;
         width: 100%;
         label{
-          padding:15px 0;
+          padding:12px 0;
           width: 100%;
         }
-        padding: 15px 0;
+        padding: 12px 0;
       }
       .input-group{
+
+        color: #4E4B66;
         width: 100%;
         display: flex;
         background: #EFF0F7;
         border-radius: 16px;
         padding: 10px 16px;
         align-items: center;
+        opacity: .8;
         input{
           width: 100%;
           border:0;
@@ -225,6 +229,8 @@ export default {
         }
       }
       textarea{
+
+        color: #4E4B66;
         width: 100%;
         display: flex;
         background: #EFF0F7;
@@ -232,6 +238,7 @@ export default {
         padding: 20px;
         align-items: center;
         border:0;
+        opacity: .8;
         font-size: 16px;
 
       }
@@ -240,29 +247,31 @@ export default {
         flex-wrap: wrap;
         width: 100%;
         margin:50px 0;
+        .label{
+          width: 100%;
+          padding:0 12px;
+          padding-bottom: 12px;
+        }
         .item-service{
           padding: 5px 16px;
-          font-family: Poppins;
+          font-family: 'Poppins';
           font-style: normal;
           font-weight: 600;
           font-size: 14px;
           line-height: 21px;
-          /* identical to box height */
-
           display: flex;
           align-items: center;
           text-align: center;
           letter-spacing: 1.25px;
           text-transform: capitalize;
-
-          /* Primary/Pink */
-
           color: #F7B5D2;
-
           border: 1px solid #F7B5D2;
           margin:10px;
           border-radius: 30px;
           cursor: pointer;
+        @media only screen and (max-width: 768px) {
+           margin:5px 2px;
+        }
         }
         .item-service:hover, .item-service.active{
           color: #9F109A;
@@ -275,19 +284,26 @@ export default {
           border-radius: 32px;
           border: 0;
           padding: 14px 24px;
-          /* Desktop/Button 1 */
-
           font-family: 'Poppins';
           font-style: normal;
           font-weight: 600;
           font-size: 16px;
           line-height: 24px;
           color: #FCFCFC;
-
           min-width: 353px;
           max-width: 100%;
+          cursor: pointer;
+
+          @media only screen and (max-width: 768px) {
+            min-width: auto;
+            width: 100%;
+            margin:auto
+          }
 
         }
+         .btn-submit:hover{
+          background: #eca9c6;
+         }
     }
   }
 }
