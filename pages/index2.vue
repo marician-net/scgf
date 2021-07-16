@@ -14,7 +14,6 @@
       <img class="bg-il-1" src="/il-1.png" alt="Il 1" />
       <img class="bg-il-1-md" src="/il-1-md.png" alt="Il 1 Md" />
 
-
       <div class="bg-b"></div>
     </section>
     <section class="secret-boxes" id="secret-boxes">
@@ -43,42 +42,30 @@
       </div>
       <div class="box-list">
         <div class="box-list-item">
-          <lottie-player
+          <s-illustration
             src="https://assets5.lottiefiles.com/private_files/lf30_sqamzndl.json"
-            background="transparent"
-            speed="1"
-            loop
-            autoplay
-            class="lottie-box"
-          ></lottie-player>
+            className="lottie-box"
+          />
           <span>Secret Counter</span>
         </div>
         <div class="box-list-item">
-          <lottie-player
+          <s-illustration
             src="https://assets2.lottiefiles.com/private_files/lf30_0vbtxqrd.json"
-            background="transparent"
-            speed="1"
-            loop
-            autoplay
-            class="lottie-box"
-          ></lottie-player>
+            className="lottie-box"
+          />
           <span>Figment Learn</span>
         </div>
         <div class="box-list-item">
-          <lottie-player
+          <s-illustration
             src="https://assets10.lottiefiles.com/private_files/lf30_woabmjiz.json"
-            background="transparent"
-            speed="1"
-            loop
-            autoplay
-            class="lottie-box"
-          ></lottie-player>
+            className="lottie-box"
+          />
           <span>Richie Rich</span>
         </div>
       </div>
       <nuxt-link class="btn btn-explore btn-exlpore-mobile" to="/secret-boxes">
-          Explore more
-      <s-nav-icon />
+        Explore more
+        <s-nav-icon />
       </nuxt-link>
     </section>
     <section class="mission" id="about">
@@ -103,14 +90,10 @@
         designed Secret Apps.
       </div>
       <div class="mission-img">
-        <lottie-player
-          class="img"
+        <s-illustration
           src="https://assets3.lottiefiles.com/private_files/lf30_iakk850x.json"
-          background="transparent"
-          speed="1"
-          loop
-          autoplay
-        ></lottie-player>
+          className="img"
+        />
       </div>
     </section>
     <section class="contributors" id="contributors">
@@ -167,14 +150,10 @@
           </nuxt-link>
         </div>
         <div class="work-content-right">
-          <lottie-player
-            class="lottie"
+          <s-illustration
             src="https://assets7.lottiefiles.com/private_files/lf30_bxgf8h5h.json"
-            background="transparent"
-            speed="1"
-            loop
-            autoplay
-          ></lottie-player>
+            className="lottie"
+          />
         </div>
       </div>
     </section>
@@ -184,7 +163,6 @@
     <div class="bg-gradient-3"></div>
     <div class="bg-gradient-4"></div>
     <div class="bg-gradient-5"></div>
-    
   </div>
 </template>
 
@@ -193,5 +171,5 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/index';
+@import "../assets/index";
 </style>

@@ -626,3 +626,12 @@
     top: 3648px;
   }
 }
+
+
+.box{
+  width: 173px;
+  margin: auto;
+  @media only screen and (max-width: 768px) {
+      width: 121px;
+  }
+}

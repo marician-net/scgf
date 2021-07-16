@@ -39,7 +39,7 @@
 
     <div class="footer-logo">
       <div class="footer-logo-flex">
-        <img  src="/logo.png" alt="Logo SCGF" />
+        <img src="/logo.png" alt="Logo SCGF" />
         <h6>
           SecretChainGirl <br />
           Foundation
@@ -47,9 +47,7 @@
       </div>
     </div>
 
-    <a href="#" target="_BLANK" class="footer-cr"
-      >© 2021 SecretChainGirl Foundation</a
-    >
+    <div class="footer-cr">© 2021 SecretChainGirl Foundation</div>
   </footer>
 </template>
 
@@ -66,12 +64,12 @@
     margin-bottom: 24px;
   }
   .footer-logo {
-    .footer-logo-flex{
+    .footer-logo-flex {
       display: flex;
       align-items: center;
-      img{
+      img {
         width: 72px;
-        height:72px
+        height: 72px;
       }
     }
     h6 {
@@ -83,16 +81,16 @@
     @media only screen and (max-width: 768px) {
       display: block;
       width: 100%;
-      .footer-logo-flex{
-         width: 100%;
-         padding-top: 24px;
-         margin-bottom: 27px;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-        img{
+      .footer-logo-flex {
+        width: 100%;
+        padding-top: 24px;
+        margin-bottom: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
           width: 44px;
-          height: 44px
+          height: 44px;
         }
       }
     }
@@ -100,15 +98,14 @@
   @media only screen and (max-width: 768px) {
     height: auto;
     padding: 43px 67px;
-
   }
 }
 .footer-menu {
   float: right;
   display: flex;
-  .f-menu-community{
+  .f-menu-community {
     padding-right: 140px;
-     @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
       padding-right: 0;
       width: 100%;
     }
@@ -133,13 +130,13 @@
   right: 140px;
   color: #ffffff;
   padding: 17px;
-    opacity: 0.8;
+  opacity: 0.8;
 
   @media only screen and (max-width: 768px) {
     right: 0;
     width: 100%;
     text-align: center;
-    padding:  27px;
+    padding: 27px;
   }
 }
 .footer ul {

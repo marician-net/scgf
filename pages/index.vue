@@ -41,24 +41,30 @@
       </div>
       <div class="box-list">
         <div class="box-list-item">
-          <img class="img-lg" src="/box-1.png" alt="box 1" />
-          <img class="img-md" src="/box-1-md.png" alt="box 1" />
+          <s-illustration
+            src="https://assets5.lottiefiles.com/private_files/lf30_sqamzndl.json"
+            className="box"
+          />
           <span>Secret Counter</span>
         </div>
         <div class="box-list-item">
-          <img class="img-lg" src="/box-2.png" alt="box 1" />
-          <img class="img-md" src="/box-2-md.png" alt="box 1" />
+          <s-illustration
+            src="https://assets2.lottiefiles.com/private_files/lf30_0vbtxqrd.json"
+            className="box"
+          />
           <span>Figment Learn</span>
         </div>
         <div class="box-list-item">
-          <img class="img-lg" src="/box-3.png" alt="box 1" />
-          <img class="img-md" src="/box-3-md.png" alt="box 1" />
+          <s-illustration
+            src="https://assets10.lottiefiles.com/private_files/lf30_woabmjiz.json"
+            className="box"
+          />
           <span>Richie Rich</span>
         </div>
       </div>
       <nuxt-link class="btn btn-explore btn-exlpore-mobile" to="/secret-boxes">
-          Explore more
-      <s-nav-icon />
+        Explore more
+        <s-nav-icon />
       </nuxt-link>
     </section>
     <section class="mission" id="about">
@@ -121,16 +127,18 @@
       <div class="work-content">
         <div class="work-content-left">
           <p class="work-text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam pulvinar
-            suspendisse nunc a. Dictumst blandit amet nunc feugiat gravida.
-            Sagittis, in iaculis vestibulum, rhoncus scelerisque scelerisque
-            dignissim odio. Amet nisl, tristique sed pharetra molestie donec elit
-            rutrum quisque. Eget augue non mauris est. Eu sed et est lorem enim
-            morbi. Viverra aliquet cursus habitant dolor purus. Dolor augue eu sit
-            in.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
+            pulvinar suspendisse nunc a. Dictumst blandit amet nunc feugiat
+            gravida. Sagittis, in iaculis vestibulum, rhoncus scelerisque
+            scelerisque dignissim odio. Amet nisl, tristique sed pharetra
+            molestie donec elit rutrum quisque. Eget augue non mauris est. Eu
+            sed et est lorem enim morbi. Viverra aliquet cursus habitant dolor
+            purus. Dolor augue eu sit in.
           </p>
           <p class="work-text-md">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam pulvinar suspendisse nunc a. Dictumst blandit amet nunc feugiat gravida 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
+            pulvinar suspendisse nunc a. Dictumst blandit amet nunc feugiat
+            gravida
           </p>
           <nuxt-link class="btn btn-explore" to="/work-with-us">
             Let’s Go
@@ -143,7 +151,6 @@
       </div>
     </section>
 
-
     <div class="bg-gradient-1"></div>
     <div class="bg-gradient-2"></div>
     <div class="bg-gradient-3"></div>
@@ -153,5 +160,5 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../assets/index';
+@import "../assets/index";
 </style>
