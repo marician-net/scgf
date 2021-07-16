@@ -40,18 +40,21 @@
       </div>
       <div class="box-list">
         <div class="box-list-item">
-          <img class="img-lg" src="/box-1.png" alt="box 1" />
-          <img class="img-md" src="/box-1-md.png" alt="box 1" />
+           <s-illustration src="https://assets5.lottiefiles.com/private_files/lf30_sqamzndl.json" 
+              className="box"
+               />
           <span>Secret Counter</span>
         </div>
         <div class="box-list-item">
-          <img class="img-lg" src="/box-2.png" alt="box 1" />
-          <img class="img-md" src="/box-2-md.png" alt="box 1" />
+           <s-illustration src="https://assets2.lottiefiles.com/private_files/lf30_0vbtxqrd.json" 
+              className="box"
+               />
           <span>Figment Learn</span>
         </div>
         <div class="box-list-item">
-          <img class="img-lg" src="/box-3.png" alt="box 1" />
-          <img class="img-md" src="/box-3-md.png" alt="box 1" />
+          <s-illustration src="https://assets2.lottiefiles.com/private_files/lf30_0vbtxqrd.json" 
+              className="box"
+               />
           <span>Richie Rich</span>
         </div>
       </div>
@@ -653,4 +656,15 @@
     left: -100px;
   }
 }
+
+
+
+
+ .box {
+              width: 137px;
+              margin-right: 52px;
+              @media only screen and (max-width: 1080px) {
+                margin-top:30px
+              }
+            }
 </style>

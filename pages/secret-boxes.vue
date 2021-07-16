@@ -23,7 +23,7 @@
                 background="transparent"
                 speed="1"
                 loop
-                autoplay
+                hover
                 class="box"
               ></lottie-player>
             </div>
@@ -78,14 +78,9 @@
         <li>
           <div class="box-list-item">
             <div class="list-img">
-              <lottie-player
-                src="https://assets2.lottiefiles.com/private_files/lf30_0vbtxqrd.json"
-                background="transparent"
-                speed="1"
-                loop
-                autoplay
-                class="box"
-              ></lottie-player>
+              <s-illustration src="https://assets2.lottiefiles.com/private_files/lf30_0vbtxqrd.json" 
+              className="box"
+               />
             </div>
             <div class="list-content">
               <h5>
@@ -143,7 +138,7 @@
                 background="transparent"
                 speed="1"
                 loop
-                autoplay
+                hover
                 class="box"
               ></lottie-player>
             </div>
