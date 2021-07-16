@@ -1,5 +1,5 @@
 <template>
-  <svg @click="$router.push('/')" width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg class="logo" @click="$router.push('/')" width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d)">
 <path d="M52 91C76.3005 91 96 71.3005 96 47C96 22.6995 76.3005 3 52 3C27.6995 3 8 22.6995 8 47C8 71.3005 27.6995 91 52 91Z" fill="url(#paint0_linear)"/>
 </g>
@@ -116,3 +116,8 @@
 </defs>
 </svg>
 </template>
+<style>
+.logo{
+  cursor: pointer;
+}
+</style>

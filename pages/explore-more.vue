@@ -37,16 +37,20 @@
             </svg>
           </a>
         </li>
-         <li>
+        <li>
           <h6>
-             <span >Secret NFTs
-             </span>
-             </h6>
+            <span>Secret NFTs </span>
+          </h6>
           <p class="body-1">
-            Quickstarts to help you build decentralized, privacy preserving dApps on the Secret Network. Each box comes with everything you need to start building and includes libraries, secret contracts and beautiful UI elements so you can focus on coding your functionality. Secret Boxes can be anything from use case blueprints to chain integrations, technical bootstraps and more.
+            Quickstarts to help you build decentralized, privacy preserving
+            dApps on the Secret Network. Each box comes with everything you need
+            to start building and includes libraries, secret contracts and
+            beautiful UI elements so you can focus on coding your functionality.
+            Secret Boxes can be anything from use case blueprints to chain
+            integrations, technical bootstraps and more.
           </p>
           <a href="#">
-           Learn More Secret NFTs
+            Learn More Secret NFTs
 
             <svg
               width="24"
@@ -66,11 +70,12 @@
         </li>
         <li>
           <h6>
-             <span >Lorem Ipsum DAO
-             </span>
-             </h6>
+            <span>Lorem Ipsum DAO </span>
+          </h6>
           <p class="body-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing id aliquam non placerat et. A arcu morbi gravida a viverra condimentum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing
+            id aliquam non placerat et. A arcu morbi gravida a viverra
+            condimentum.
           </p>
           <a href="#">
             Visit Secret Boxes Website
@@ -126,9 +131,21 @@ export default {
     padding: 68px;
     @media only screen and (max-width: 768px) {
       padding: 30px;
-      background: linear-gradient(89.05deg, #FFFFFF 45.73%, rgba(255, 255, 255, 0) 105.23%);
+      background: linear-gradient(
+        89.05deg,
+        #ffffff 45.73%,
+        rgba(255, 255, 255, 0) 105.23%
+      );
       backdrop-filter: blur(28px);
       border-radius: 75px 0px 75px 75px;
+    }
+    h3 {
+      font-size: 48px;
+      line-height: 63px;
+      @media only screen and (max-width: 768px) {
+        font-size: 31px;
+        line-height: 39px;
+      }
     }
     .list-explore {
       list-style: none;
@@ -136,30 +153,33 @@ export default {
         margin-top: 100px;
         margin-bottom: 100px;
       }
-      h6 span{
+      h6 span {
         font-size: 20px;
       }
-      h6 span{
+      h6 span {
         @media only screen and (max-width: 768px) {
-            width: auto;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 36px;
-            line-height: 50px;
-            background: linear-gradient(91.22deg, #a568ef 16%, #ff9191 103.7%);
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+          width: auto;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 50px;
+          background: linear-gradient(91.22deg, #a568ef 16%, #ff9191 103.7%);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
       }
-      li{
+      li {
         margin-top: 53px;
       }
       li p {
         padding: 24px 0;
+        @media only screen and (max-width: 768px) {
+          font-size: 18px;
+        }
       }
       li a {
-        font-family: 'Poppins';
+        font-family: "Poppins";
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -175,6 +195,11 @@ export default {
         color: #6900f4;
         svg {
           margin: 10px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          font-size: 16px;
+          line-height: 28px;
         }
       }
     }
