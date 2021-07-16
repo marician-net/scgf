@@ -6,7 +6,8 @@
       :key="i.id"
     >
       <div class="container-item">
-        <img class="bg-user" :src="`/user/${i.img}`" :alt="`User ${i.id}`" />
+        <img class="bg-user-lg" :src="`/user/${i.img}`" :alt="`User ${i.id}`" />
+        <img class="bg-user-md" :src="`/user/md/${i.img}`" :alt="`User ${i.id}`" />
         <h6 class="c-name">{{ i.name }}</h6>
         <small class="body-1 c-title">{{ i.title }}</small>
 
@@ -48,13 +49,27 @@
       justify-content: center;
       text-align: center;
       flex-wrap: wrap;
-      .bg-user {
+      .bg-user-lg {
+        display: block;
         width: 100%;
       }
+      .bg-user-md {
+        display: none;
+        width: 100%;
+      }
+        @media only screen and (max-width: 1080px) {
+           .bg-user-lg {
+            display: none;
+          }
+          .bg-user-md {
+            display: block;
+          }
+        }
       .c-name {
         width: 100%;
         padding: 16px 38px;
-        @media only screen and (max-width: 500px) {
+        color: #222222;
+        @media only screen and (max-width: 1080px) {
           padding: 8px 0;
           font-size: 20px;
         }
@@ -62,7 +77,7 @@
       .c-title {
         width: 100%;
         padding: 16px 38px;
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 1080px) {
           padding: 8px 0;
           font-size: 16px;
         }
@@ -82,12 +97,14 @@
       justify-content: space-between;
       align-items: center;
       padding: 10%;
-      @media only screen and (max-width: 500px) {
-        top: 5%;
+      @media only screen and (max-width: 1080px) {
+        top: 20%;
+      }
+      @media only screen and (max-width: 480px) {
+        top: 0%;
       }
       .c-icon {
         margin-bottom: 10%;
-
         padding: 8px;
         color: #4e4b66;
         border: 1px solid #4e4b66;
@@ -97,7 +114,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
+        @media only screen and (max-width: 1080px) {
+          margin: 10px 2%;
+        }
         svg {
           width: 14px;
           height: 14px;
@@ -107,7 +126,9 @@
         margin-top: 24px;
         text-align: center;
         width: 100%;
-        @media only screen and (max-width: 500px) {
+        color: #222222;
+
+        @media only screen and (max-width: 1080px) {
           font-family: "Segoe UI";
           font-style: normal;
           font-weight: 600;
@@ -137,8 +158,8 @@
   }
   .il_cr_2 {
     position: absolute;
-    top: 20%;
-    right: 2%;
+    top: 25%;
+    right: 5%;
   }
   .il_cr_3 {
     position: absolute;
@@ -148,27 +169,31 @@
   .il_cr_4 {
     position: absolute;
     bottom: 5%;
-    right: 5%;
+    right: 2%;
   }
   @media only screen and (max-width: 1080px) {
     .il_cr_1 {
       width: 20%;
-      left: -2%;
-      top: 5%;
+      left: 5%;
+      top: 7%;
+      transform: rotate(20deg);
     }
     .il_cr_2 {
       width: 20%;
       right: -2%;
-      top: 25%;
-    }
-    .il_cr_3 {
-      width: 20%;
-      left: -2%;
-      bottom: 20%;
+      top: 28%;
     }
     .il_cr_4 {
       width: 20%;
-      right: -2%;
+      left: -2%;
+      bottom: 20%;
+      transform: rotate(-20deg);
+
+    }
+      .il_cr_3 {
+      width: 15%;
+      left: auto;
+      right: 2%;
       bottom: -5%;
     }
   }
